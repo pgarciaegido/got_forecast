@@ -1,0 +1,17 @@
+{
+  "name": "got_forecast",
+  "version": "1.0.0",
+  "description": "got forecast",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run styles && nodemon index.js",
+    "styles": "node-sass --output-style compressed styles/main.scss public/styles/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sass": "^1.17.0"
+  }
+}
