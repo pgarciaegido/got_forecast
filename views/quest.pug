@@ -1,11 +1,28 @@
-#quest
-  h3 Instructions
-  ol
-    li Predict if each character will be alive or dead at the end of season 8. 1 point for each correct answer
-    li If you blablabla
-    li Correctly answer Bonus Questions for more points
-    li Entry with the most points wins the entire pool.
-  form
-    each c in characters
-      label(for="")= c
-        input(type="checkbox")
+extends main.pug
+
+include ./mixins.pug
+
+block content
+  #quest
+    h3 Instructions
+    ol
+      li Predict if each character will be alive or dead at the end of season 8. 1 point for each correct answer
+      li If you blablabla
+      li Correctly answer Bonus Questions for more points
+      li Entry with the most points wins the entire pool.
+    form(
+      action="",
+      submit="",
+      method="POST")
+      .header
+        .pure-g
+          .pure-u-1-4 Character
+          .pure-u-1-4 Alive
+          .pure-u-1-4 Dead
+          .pure-u-1-4 White Walker?
+      each c in characters
+        +characterForm(c)
+  
+  #dialog(onclick="closePicture()")
+    +dialogCharacterInfo()
+      

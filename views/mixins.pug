@@ -1,0 +1,25 @@
+mixin characterForm(character)
+  .pure-g
+    .pure-u-1-4(onclick=`openPicture('${character.idName}')`)= character.name
+    .pure-u-1-4
+      label(for=`alive-${character.idName}`)
+        input(
+          type="checkbox",
+          name=`alive-${character.idName}`
+        )
+    .pure-u-1-4
+      label(for=`dead-${character.idName}`)
+        input(
+          type="checkbox",
+          name=`dead-${character.idName}`
+        )
+    .pure-u-1-4
+      label(for=`white-walker-${character.idName}`)
+        input(
+          type="checkbox",
+          name=`white-walker-${character.idName}`
+        )
+
+mixin dialogCharacterInfo(characterIdName)
+  #dialog-content
+    img#dialog-content-image
