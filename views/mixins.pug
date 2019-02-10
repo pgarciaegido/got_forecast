@@ -1,6 +1,6 @@
 mixin characterForm(character)
   .pure-g
-    .pure-u-1-4(onclick=`openPicture('${character.idName}')`)= character.name
+    .pure-u-1-4(onclick=`gotForecast.pictureHandler.openPicture('${character.idName}')`)= character.name
     .pure-u-1-4
       label(for=`alive-${character.idName}`)
         input(
@@ -22,4 +22,5 @@ mixin characterForm(character)
 
 mixin dialogCharacterInfo(characterIdName)
   #dialog-content
-    img#dialog-content-image
+    #dialog-content-image
+      img#dialog-content-image-img
