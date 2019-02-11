@@ -5,19 +5,22 @@ mixin characterForm(character)
       label(for=`alive-${character.idName}`)
         input(
           type="checkbox",
-          name=`alive-${character.idName}`
+          name=`alive-${character.idName}`,
+          value=`alive-${character.idName}`,
         )
     .pure-u-1-4
       label(for=`dead-${character.idName}`)
         input(
           type="checkbox",
-          name=`dead-${character.idName}`
+          name=`dead-${character.idName}`,
+          value=`dead-${character.idName}`,
         )
     .pure-u-1-4
       label(for=`white-walker-${character.idName}`)
         input(
           type="checkbox",
-          name=`white-walker-${character.idName}`
+          name=`white-walker-${character.idName}`,
+          value=`white-walker-${character.idName}`
         )
 
 mixin dialogCharacterInfo(characterIdName)

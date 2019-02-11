@@ -11,10 +11,10 @@ block content
       li Correctly answer Bonus Questions for more points
       li Entry with the most points wins the entire pool.
     form(
-      action="",
-      submit="",
+      action="/submit",
       method="POST")
       .header
+        input(name="name", value="pablo")
         .pure-g
           .pure-u-1-4 Character
           .pure-u-1-4 Alive
@@ -22,6 +22,10 @@ block content
           .pure-u-1-4 White Walker?
       each c in characters
         +characterForm(c)
+      
+      button(type="submit") submit
+
+    a.pure-button(href=`/quest?p=${parseInt(page) + 1}`) Next
   
   #dialog(onclick="gotForecast.pictureHandler.closePicture()")
     +dialogCharacterInfo()
