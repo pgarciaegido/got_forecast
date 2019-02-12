@@ -4,17 +4,11 @@ include ./mixins.pug
 
 block content
   #quest
-    h3 Instructions
-    ol
-      li Predict if each character will be alive or dead at the end of season 8. 1 point for each correct answer
-      li If you blablabla
-      li Correctly answer Bonus Questions for more points
-      li Entry with the most points wins the entire pool.
     form(
       action="/submit",
-      method="POST")
+      method="POST",
+      name="forecast")
       .header
-        input(name="name", value="pablo")
         .pure-g
           .pure-u-1-4 Character
           .pure-u-1-4 Alive
@@ -23,9 +17,11 @@ block content
       each c in characters
         +characterForm(c)
       
-      button(type="submit") submit
 
-    a.pure-button(href=`/quest?p=${parseInt(page) + 1}`) Next
+      if lastPage
+        button.pure-button(type="submit") submit
+      else
+        a.pure-button(onclick="gotForecast.formHandler.storeAnswers(forecast)") Next
   
   #dialog(onclick="gotForecast.pictureHandler.closePicture()")
     +dialogCharacterInfo()

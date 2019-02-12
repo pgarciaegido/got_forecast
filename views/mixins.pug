@@ -4,23 +4,23 @@ mixin characterForm(character)
     .pure-u-1-4
       label(for=`alive-${character.idName}`)
         input(
-          type="checkbox",
-          name=`alive-${character.idName}`,
-          value=`alive-${character.idName}`,
+          type="radio",
+          name=`status-${character.idName}`,
+          value="alive",
         )
     .pure-u-1-4
       label(for=`dead-${character.idName}`)
         input(
-          type="checkbox",
-          name=`dead-${character.idName}`,
-          value=`dead-${character.idName}`,
+          type="radio",
+          name=`status-${character.idName}`,
+          value="dead",
         )
     .pure-u-1-4
       label(for=`white-walker-${character.idName}`)
         input(
           type="checkbox",
           name=`white-walker-${character.idName}`,
-          value=`white-walker-${character.idName}`
+          value="true"
         )
 
 mixin dialogCharacterInfo(characterIdName)

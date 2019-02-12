@@ -1,2 +1,14 @@
 @import './landing';
 @import './quest';
+
+#header {
+  width: 100%;
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  
+  p {
+    color: white;
+  }
+}

@@ -7,8 +7,11 @@ const questRH = (req, res) => {
 
   const startIndex = page * charactersPerPage - charactersPerPage;
   let characters = allCharacters.slice(startIndex, startIndex + charactersPerPage);  
+  let lastPage = (page * charactersPerPage) >= allCharacters.length;
+
+  console.log(lastPage);
   
-  return res.render('quest.pug', {characters, page});
+  return res.render('quest.pug', {characters, page, lastPage});
 };
 
 module.exports = { questRH };
