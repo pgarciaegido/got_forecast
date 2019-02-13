@@ -4,9 +4,8 @@ include ./mixins.pug
 
 block content
   #quest
+    // new form will get sent on script "submitForm" on a new form element
     form(
-      action="/submit",
-      method="POST",
       name="forecast")
       .header
         .pure-g
@@ -19,9 +18,9 @@ block content
       
 
       if lastPage
-        button.pure-button(type="submit") submit
+        a.pure-button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
       else
-        a.pure-button(onclick="gotForecast.formHandler.storeAnswers(forecast)") Next
+        a.pure-button(onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`) Next
   
   #dialog(onclick="gotForecast.pictureHandler.closePicture()")
     +dialogCharacterInfo()
