@@ -1,4 +1,7 @@
+const pug = require('pug');
+
 const allCharacters = require('../db/characters.json');
+const downloadReport = require('../downloadReport');
 
 const questRH = (req, res) => {
 
@@ -12,9 +15,13 @@ const questRH = (req, res) => {
   return res.render('quest.pug', {characters, page, lastPage});
 };
 
-const submitRH = (req, res) => {
+const submitRH = (req, res) => res.render('forecastResults.pug', { results: formatForm(req.body) });
 
-  res.render('forecastResults.pug', { results: formatForm(req.body) });  
+const downloadPicture = async (req, res) => {
+  await downloadReport(req.query.html);
+  res.setHeader('Content-disposition', 'attachment; filename=hola.png');
+  res.setHeader('Content-type', 'image/png');
+  res.download(__dirname + '/../hola.png');
 };
 
 const formatForm = (payload) => {
@@ -32,4 +39,4 @@ const formatForm = (payload) => {
 
 const getCharacterFromNameId = nameId => allCharacters.find(char => char.idName === nameId);
 
-module.exports = { questRH, submitRH };
+module.exports = { questRH, submitRH, downloadPicture };

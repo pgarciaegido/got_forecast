@@ -16,6 +16,7 @@
     "express": "^4.16.4",
     "form-serialize": "^0.7.2",
     "pug": "^2.0.3",
+    "puppeteer": "^1.12.2",
     "sass": "^1.17.0"
   },
   "devDependencies": {
