@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { questRH } = require('./routes/quest'); 
+const { questRH, submitRH } = require('./routes/quest'); 
 
 const app = express();
 
@@ -13,10 +13,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res) => res.render('landing.pug'));
+
 app.get('/quest', questRH);
-app.post('/submit', (req, res) => {
-  console.log(req.body);
-  res.send(req.body);
-})
+app.post('/submit', submitRH);
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));

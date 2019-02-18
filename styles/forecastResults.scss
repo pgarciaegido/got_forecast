@@ -1,0 +1,18 @@
+#forecast-results {
+  .results-table {
+
+    div {
+      text-align: center;
+    }
+    .results {
+      background-color: lightgray;
+      padding: 10px;
+      margin-bottom: 10px;
+      .character-info {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
