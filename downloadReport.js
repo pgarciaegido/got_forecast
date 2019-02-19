@@ -9,7 +9,7 @@ module.exports = async (html) => {
   const styles = fs.readFileSync(__dirname + '/public/styles/index.css', 'utf-8');
   html = `<style>${styles}</style>${html}`;
   await page.setContent(html);
-  const screenshot = await page.screenshot({ path: 'hola.png' });
+  const screenshot = await page.screenshot({ path: 'hola.png', fullPage: true });
   await browser.close();
   return screenshot;
 };

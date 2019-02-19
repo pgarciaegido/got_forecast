@@ -1,6 +1,21 @@
+@import './variables';
+
 @import './landing';
 @import './quest';
 @import './forecastResults';
+
+
+#main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: $richBlack;
+
+  #ad-container {
+    width: 100%;
+    height: 100px;
+    background-color: $darkSlateGray;
+  }
+}
 
 #header {
   width: 100%;
