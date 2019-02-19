@@ -4,7 +4,8 @@
   "description": "got forecast",
   "main": "index.js",
   "scripts": {
-    "start": "npm run styles && npm run scripts && npm run images && nodemon index.js",
+    "start": "node index.js",
+    "start-dev": "npm run styles && npm run scripts && npm run images && nodemon index.js",
     "scripts": "webpack",
     "images": "imagemin assets/images/* --out-dir=public/images",
     "styles": "node-sass --output-style compressed styles/main.scss public/styles/index.css"
