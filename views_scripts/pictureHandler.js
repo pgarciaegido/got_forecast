@@ -1,4 +1,4 @@
-const openPicture = (character) => {
+/* const openPicture = (character) => {
   console.log(character);
   document.getElementById('dialog').classList.add('opened');
   document.getElementById('dialog-content-image-img').src = `/images/${character}.jpg`;
@@ -11,3 +11,4 @@ const closePicture = () => {
 };
 
 module.exports = { openPicture, closePicture };
+ */

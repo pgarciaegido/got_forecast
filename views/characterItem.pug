@@ -1,0 +1,26 @@
+mixin characterItem(character)
+  #characterItem
+    p=character
+  //.pure-g
+    .pure-u-1-4(onclick=`gotForecast.pictureHandler.openPicture('${character.idName}')`)= character.name
+    .pure-u-1-4
+      label(for=`alive-${character.idName}`)
+        input(
+          type="radio",
+          name=`status-${character.idName}`,
+          value="alive",
+        )
+    .pure-u-1-4
+      label(for=`dead-${character.idName}`)
+        input(
+          type="radio",
+          name=`status-${character.idName}`,
+          value="dead",
+        )
+    .pure-u-1-4
+      label(for=`whitewalker-${character.idName}`)
+        input(
+          type="checkbox",
+          name=`whitewalker-${character.idName}`,
+          value="true"
+        )

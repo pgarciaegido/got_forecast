@@ -1,22 +1,24 @@
-mixin characterForm(character)
-  .pure-g
-    .pure-u-1-4(onclick=`gotForecast.pictureHandler.openPicture('${character.idName}')`)= character.name
-    .pure-u-1-4
-      label(for=`alive-${character.idName}`)
+mixin characterItem(character)
+  .character-item
+    img.character-item-image(src=`/images/${character.idName}.jpg`, onerror="this.src='/images/jonSnow.jpg'")
+    h3.character-item-name=character.name
+
+    .character-item-status
+      label(for=`alive-${character.idName}`) alive
         input(
           type="radio",
           name=`status-${character.idName}`,
           value="alive",
         )
-    .pure-u-1-4
-      label(for=`dead-${character.idName}`)
+      label(for=`dead-${character.idName}`) dead
         input(
           type="radio",
           name=`status-${character.idName}`,
           value="dead",
-        )
-    .pure-u-1-4
-      label(for=`whitewalker-${character.idName}`)
+      )
+    
+    .character-item-whiteWalker
+      label(for=`whitewalker-${character.idName}`) White Walker?
         input(
           type="checkbox",
           name=`whitewalker-${character.idName}`,

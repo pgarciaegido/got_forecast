@@ -1,9 +1,44 @@
 #quest{
-  padding: 0 50px;
 
+  .items-container {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .items-container:first-child {
+    padding-left: 0;
+  }
+  .items-container:last-child {
+    padding-right: 0;
+  }
+
+  .character-item {
+    width: 100%;
+    text-align: center;
+    background-color: $softGray;
+    border-radius: $borderRadius;
+    padding: 10px;
+    box-sizing: border-box;
+  
+  
+    img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    
+    // NO FUNCIONA
+    h3 {
+      color: $darkSlateGray;
+    }
+
+    &-status,
+    &-whiteWalker {
+      padding: 10px;
+      border: 1px solid $darkSlateGray;
+    }
+  }  
 }
 
-#dialog {
+/* #dialog {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,3 +78,4 @@
 #dialog.opened {
   visibility: visible;
 }
+ */

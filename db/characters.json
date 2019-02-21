@@ -1,47 +1,110 @@
 [
   {
     "name": "Jon Snow",
-    "id": 583,
     "idName": "jonSnow"
   },
   { 
     "name":"Sansa Stark",
-    "id": 957,
     "idName": "sansaStark"
   },
   {
     "name": "Arya Stark",
-    "id": 148,
     "idName": "aryaStark"
   },
   {
     "name": "Bran Stark",
-    "id": 583,
     "idName": "branStark"
   },
   { 
     "name":"Cercei Lannister",
-    "id": 957,
     "idName": "cerceiLannister"
   },
   {
     "name": "Jaime Lannister",
-    "id": 148,
     "idName": "jaimeLannister"
   },
   {
     "name": "Tyrion Lannister",
-    "id": 583,
     "idName": "tyrionLannister"
   },
   { 
     "name":"Daenerys Targaryen",
-    "id": 957,
     "idName": "daenerysTargaryen"
   },
   {
     "name": "Yara Greyjoy",
-    "id": 148,
     "idName": "yaraGreyjoy"
+  },
+  {
+    "name": "Theon Greyjoy",
+    "idName": "theonGreyjoy"
+  },
+  { 
+    "name":"Euron Grayjoy",
+    "idName": "euronGrayjoy"
+  },
+  {
+    "name": "Melisandre",
+    "idName": "melisandre"
+  },
+  {
+    "name": "Jorah Mormont",
+    "idName": "jorahMormont"
+  },
+  { 
+    "name":"The Hound",
+    "idName": "theHound"
+  },
+  {
+    "name": "The Mountain",
+    "idName": "theMountain"
+  },
+  {
+    "name": "Samwell Tarly",
+    "idName": "samwellTarly"
+  },
+  { 
+    "name":"Gilly",
+    "idName": "gilly"
+  },
+  {
+    "name": "Sam (Small Child)",
+    "idName": "samChild"
+  },
+  {
+    "name": "Lord Varys",
+    "idName": "lordVarys"
+  },
+  {
+    "name": "Brienne of Tarth",
+    "idName": "brienneOfTarth"
+  },
+  { 
+    "name":"Davos Seaworth",
+    "idName": "davosSeaworth"
+  },
+  {
+    "name": "Bronn",
+    "idName": "bronn"
+  },
+  {
+    "name": "Podrick Payne",
+    "idName": "podrickPayne"
+  },
+  { 
+    "name":"Tormund Giantsbane",
+    "idName": "tormundGiantsbane"
+  },
+  {
+    "name": "Grey Worm",
+    "idName": "greyWorm"
+  },
+  {
+    "name": "Gendry",
+    "idName": "gendry"
+  },
+  {
+    "name": "Beric Dondarrion",
+    "idName": "bericDondarrion"
   }
 ]
