@@ -6,15 +6,16 @@ block content
   #quest
     // new form will get sent on script "submitForm" on a new form element
     form(name="forecast")
-      .pure-g
+      .pure-g.items-container
         each c in characters
-          .pure-u-1-3.items-container
+          .pure-u-1-3.item-container
             +characterItem(c)      
 
-      if lastPage
-        a.pure-button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
-      else
-        a.pure-button(onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`) Next
+      .button-container
+        if lastPage
+          a.custom--button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
+        else
+          a.custom--button(onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`) Next
   
   // #dialog(onclick="gotForecast.pictureHandler.closePicture()")
     +dialogCharacterInfo()

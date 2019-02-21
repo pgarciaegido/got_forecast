@@ -30,3 +30,18 @@
     color: white;
   }
 }
+
+.custom--button {
+  padding: 10px 20px;
+  border-radius: $borderRadius;
+  background-color: $jonquil;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom--button.huge {
+  padding: 25px 50px;
+  font-size: 1.5em;
+  font-weight: 500;
+}

@@ -1,41 +1,80 @@
 #quest{
+  padding-bottom: 30px;
+
+  label {
+    margin-right: 10px;
+    input {
+      margin-left: 5px;
+    }
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
 
   .items-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .items-container:first-child {
-    padding-left: 0;
-  }
-  .items-container:last-child {
-    padding-right: 0;
-  }
-
-  .character-item {
-    width: 100%;
-    text-align: center;
-    background-color: $softGray;
-    border-radius: $borderRadius;
-    padding: 10px;
-    box-sizing: border-box;
+    margin-bottom: 50px;
   
-  
-    img {
-      max-width: 100px;
-      border-radius: 50%;
-    }
-    
-    // NO FUNCIONA
-    h3 {
-      color: $darkSlateGray;
-    }
-
-    &-status,
-    &-whiteWalker {
+    .item-container {
       padding: 10px;
-      border: 1px solid $darkSlateGray;
+      box-sizing: border-box;
     }
-  }  
+    .item-container:first-child {
+      padding-left: 0;
+    }
+    .item-container:last-child {
+      padding-right: 0;
+    }
+
+    .character-item {
+      width: 100%;
+      text-align: center;
+      background-color: $softGray;
+      border-radius: $borderRadius;
+      padding: 10px 30px;
+      box-sizing: border-box;
+    
+    
+      img {
+        max-width: 100px;
+        border-radius: 50%;
+      }
+      
+      // NO FUNCIONA
+      h3 {
+        color: $darkSlateGray;
+      }
+
+      &-description {
+        font-size: 0.9em;
+      }
+  
+      &-status,
+      &-whiteWalker {
+        padding: 10px;
+        border: 1px solid $darkSlateGray;
+      }
+
+      &-status {
+        p {
+          text-align: left;
+          margin: 0 0 10px 0;
+          color: $jonquil;
+        }
+      }
+
+      &-whiteWalker {
+        background-color: $darkSlateGray;
+        border-radius: $borderRadius;
+        color: white;
+      }
+    }  
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
 }
 
 /* #dialog {

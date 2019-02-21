@@ -3,14 +3,17 @@ mixin characterItem(character)
     img.character-item-image(src=`/images/${character.idName}.jpg`, onerror="this.src='/images/jonSnow.jpg'")
     h3.character-item-name=character.name
 
+    p.character-item-description Little description here blablasdnja askndlasndasnd nasd k nasdkand nsakndkasnd asdka nakkdnaksdand kasdnk
+
     .character-item-status
-      label(for=`alive-${character.idName}`) alive
+      p Death or alive?
+      label Alive
         input(
           type="radio",
           name=`status-${character.idName}`,
           value="alive",
         )
-      label(for=`dead-${character.idName}`) dead
+      label Dead
         input(
           type="radio",
           name=`status-${character.idName}`,
@@ -18,7 +21,7 @@ mixin characterItem(character)
       )
     
     .character-item-whiteWalker
-      label(for=`whitewalker-${character.idName}`) White Walker?
+      label White Walker?
         input(
           type="checkbox",
           name=`whitewalker-${character.idName}`,
