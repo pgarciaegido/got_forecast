@@ -4,11 +4,8 @@ const { questRH, submitRH, downloadPicture } = require('./routes/quest');
 
 const app = express();
 
-// workaround for heroku
-process.env.PWD = process.cwd()
-
 app.set('view engine', 'pug');
-app.use(express.static(process.env.PWD + '/public'));
+app.use(express.static('public'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
