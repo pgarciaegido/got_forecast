@@ -8,37 +8,25 @@
 
 
 body {
-  // background-color: #43464B;
-  background-color: lightblue;
+  background-color: $grayBackground;
 }
 #main-container {
   max-width: 1000px;
   margin: 0 auto;
-  color: $richBlack;
+  color: white;
+  padding: 30px 0;
 
   #ad-container {
     width: 100%;
     height: 100px;
-    background-color: $darkSlateGray;
-  }
-}
-
-#header {
-  width: 100%;
-  background-color: #1e1e1e;
-  text-align: center;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  
-  p {
-    color: white;
+    background-color: $jonquil;
   }
 }
 
 .custom--button {
   padding: 10px 20px;
   border-radius: $borderRadius;
-  background-color: $jonquil;
+  background-image: $yellowGradient;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -47,5 +35,5 @@ body {
 .custom--button.huge {
   padding: 25px 50px;
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 700;
 }

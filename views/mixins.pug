@@ -6,19 +6,25 @@ mixin characterItem(character)
     p.character-item-description Little description here blablasdnja askndlasndasnd nasd k nasdkand nsakndkasnd asdka nakkdnaksdand kasdnk
 
     .character-item-status
-      p Death or alive?
-      label Alive
-        input(
+      label.alive-label(onchange="gotForecast.pictureHandler.toggleOnOff(this)")
+        input.alive-input(
           type="radio",
           name=`status-${character.idName}`,
           value="alive",
         )
-      label Dead
-        input(
+        .label-image
+          img.off(src="/images/heart-gray.svg")
+          img.on(src="/images/heart-green.svg")
+      label.dead-label(onchange="gotForecast.pictureHandler.toggleOnOff(this)")
+
+        input.dead-input(
           type="radio",
           name=`status-${character.idName}`,
           value="dead",
-      )
+        )
+        .label-image
+          img.off(src="/images/skull-gray.svg")
+          img.on(src="/images/skull-red.svg")
     
     .character-item-whiteWalker
       label White Walker?

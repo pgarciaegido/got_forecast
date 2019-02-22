@@ -4,6 +4,22 @@ $richBlack: #000103;
 $brightYellow: #FDB121;
 $jonquil: #F2B216;
 $darkSlateGray: #355553;
-$softGray: #eeeeee;
+$softGray: #D3D8E1;
+$grayBackground: #43464B;
+$sunsetOrange: #FF5757;
+$cgRed: #E43B2C;
+$blue: #4392F1;
+$lightGreen: #8CE888;
+$darkerGreen: #43B549;
 
 $borderRadius: 3px;
+// To be used with background-image
+$yellowGradient: linear-gradient(to right bottom, #f2b216, #f5ba19, #f7c11d, #fac921, #fcd125);
+$redGradient: linear-gradient(to right bottom, #e43b2c, #eb4237, #f24942, #f9504c, #ff5757);
+$greenGradient: linear-gradient(to right bottom, #43b549, #57c259, #69ce68, #7bdb78, #8ce888);
+
+@mixin gradientText($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

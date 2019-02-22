@@ -13,7 +13,7 @@
   }
 
   .items-container {
-    margin-bottom: 50px;
+    margin: 20px 0 50px 0;
   
     .item-container {
       padding: 10px;
@@ -29,50 +29,67 @@
     .character-item {
       width: 100%;
       text-align: center;
-      background-color: $softGray;
+      background-color: #F5F6F8;
       border-radius: $borderRadius;
       padding: 10px 30px;
       box-sizing: border-box;
     
     
-      img {
+      &-image {
         max-width: 100px;
         border-radius: 50%;
       }
       
-      // NO FUNCIONA
       h3 {
-        color: $darkSlateGray;
+        @include gradientText($yellowGradient);
       }
 
       &-description {
         font-size: 0.9em;
-      }
-  
-      &-status,
-      &-whiteWalker {
-        padding: 10px;
-        border: 1px solid $darkSlateGray;
+        color: $grayBackground;
+        margin-bottom: 30px;
       }
 
       &-status {
-        p {
-          text-align: left;
-          margin: 0 0 10px 0;
-          color: $jonquil;
+        display: flex;
+        justify-content: space-between;
+        border-radius: $borderRadius;
+        padding: 20px 30px;
+
+        img {
+          width: 50px;
+        }
+
+        input {
+          display: none;
+        }
+
+        .label-image {
+          img.on {
+            display: none;
+          }
+        }
+
+        input[type='radio']:checked+.label-image {
+          img.on {
+            display: inline;
+          }
+          img.off {
+            display: none;
+          }
         }
       }
 
       &-whiteWalker {
-        background-color: $darkSlateGray;
+        padding: 20px;
         border-radius: $borderRadius;
-        color: white;
+        color: $blue;
       }
     }  
   }
-
+  
   .button-container {
     text-align: center;
   }
-
+  
 }
