@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start-dev": "npm run styles && npm run scripts && npm run images && nodemon index.js",
+    "start-dev": "npm run build && nodemon index.js",
+    "build": "npm run styles && npm run scripts && npm run images",
     "scripts": "webpack",
     "images": "imagemin assets/images/* --out-dir=public/images",
-    "styles": "node-sass --output-style compressed styles/main.scss public/styles/index.css"
+    "styles": "node-sass --output-style compressed styles/main.scss public/styles/index.css",
+    "deploy-heroku": "./bin/deploy-heroku.sh"
   },
   "author": "Pablo García Egido <pgarciaegido@gmail.com>",
   "license": "ISC",
