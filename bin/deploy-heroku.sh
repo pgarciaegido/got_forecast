@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-npm run build
 git checkout master
-git merge develop
+git merge develop --no-commit --no-ff
+npm run build
 git push heroku master
 git checkout develop
