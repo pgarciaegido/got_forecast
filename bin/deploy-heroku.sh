@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 git checkout master
-git merge develop -m \"merge develop\"
+git merge develop --no-edit
+echo "~~~ Merged! ~~~~"
 npm run build
 git add .
 git commit -m \"build public folder\"
