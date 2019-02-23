@@ -18,7 +18,7 @@ app.get('/quest', questRH);
 app.post('/submit', submitRH);
 app.get('/download-image', downloadPicture);
 
-console.log(__dirname);
+app.use((req, res) => res.status(404).redirect('/'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
