@@ -30,7 +30,19 @@ body {
   background-image: $yellowGradient;
   color: white;
   text-decoration: none;
-  cursor: pointer;
+  border: none;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:focus {
+    outline: none;
+  }
+}
+
+.custom--button:disabled {
+  background: #D3D8E1;
 }
 
 .custom--button.huge {

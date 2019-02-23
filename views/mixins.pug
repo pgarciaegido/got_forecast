@@ -1,26 +1,28 @@
-mixin characterItem(character)
+mixin characterItem(character, length)
   .character-item
+
     img.character-item-image(src=`/images/${character.idName}.jpg`, onerror="this.src='/images/jonSnow.jpg'")
     h3.character-item-name=character.name
 
     p.character-item-description Little description here blablasdnja askndlasndasnd nasd k nasdkand nsakndkasnd asdka nakkdnaksdand kasdnk
 
     .character-item-status
-      label.alive-label(onchange="gotForecast.pictureHandler.toggleOnOff(this)")
+      label.alive-label
         input.alive-input(
           type="radio",
           name=`status-${character.idName}`,
           value="alive",
+          onchange=`gotForecast.formHandler.enableButton(forecast, ${length})`
         )
         .label-image
           img.off(src="/images/heart-gray.svg")
           img.on(src="/images/heart-green.svg")
-      label.dead-label(onchange="gotForecast.pictureHandler.toggleOnOff(this)")
-
+      label.dead-label
         input.dead-input(
           type="radio",
           name=`status-${character.idName}`,
           value="dead",
+          onchange=`gotForecast.formHandler.enableButton(forecast, ${length})`
         )
         .label-image
           img.off(src="/images/skull-gray.svg")

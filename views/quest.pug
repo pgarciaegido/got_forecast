@@ -7,13 +7,16 @@ block content
     // new form will get sent on script "submitForm" on a new form element
     form(name="forecast")
       .pure-g.items-container
+        - const length = characters.length
         each c in characters
           .pure-u-1.pure-u-md-12-24.pure-u-lg-8-24.item-container
-            +characterItem(c)
+            +characterItem(c, length)
 
       .button-container
         if lastPage
-          a.custom--button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
+          button#button.custom--button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
         else
-          a.custom--button(onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`) Next
+          button#button.custom--button(
+            onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`,
+            disabled) Next
 

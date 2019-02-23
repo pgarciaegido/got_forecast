@@ -3,15 +3,19 @@ const formSerialize = require('form-serialize');
 const localStorageName = 'gotForecast';
 
 const storeAnswers = (form, pageTo) => {
+  event.preventDefault();
   var obj = formSerialize(form, { hash: true });
 
   // pageTo 2 means that we are currently on page 1.
   pageTo === 2 ? setLocalStorageItem(obj) : setLocalStorageItem(Object.assign(getLocalStorageItem(), obj));
 
+  console.log(pageTo);
+
   redirectToNextPage(pageTo)
 }
 
 const submitForm = (form) => {
+  event.preventDefault();
   var obj = formSerialize(form, { hash: true });
   const formAnswers = Object.assign(getLocalStorageItem() , obj);
 
@@ -48,4 +52,13 @@ const createInput = (formAnswers, key) => {
   return input;
 };
 
-module.exports = { storeAnswers, submitForm };
+const enableButton = (form, numberOfCharactersOnPage) => {
+  const button = document.getElementById('button');
+  if (button.hasAttribute('disabled')) {
+    if (Object.keys(formSerialize(form, { hash: true })).length === numberOfCharactersOnPage) {
+      button.removeAttribute('disabled');
+    }
+  }
+}
+
+module.exports = { storeAnswers, submitForm, enableButton };

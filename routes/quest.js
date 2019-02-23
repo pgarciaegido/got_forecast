@@ -1,5 +1,3 @@
-const pug = require('pug');
-
 const allCharacters = require('../db/characters.json');
 const downloadReport = require('../downloadReport');
 
