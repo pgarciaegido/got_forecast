@@ -1,0 +1,120 @@
+.character-item {
+  width: 100%;
+  text-align: center;
+  background-color: #F5F6F8;
+  border-radius: $borderRadius;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  padding-bottom: 70px;
+  position: relative;
+
+  &-image {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  h3 {
+    @include gradientText($yellowGradient);
+  }
+
+  &-description {
+    font-size: 0.9em;
+    color: $grayBackground;
+    margin-bottom: 30px;
+  }
+
+  &-status {
+    display: flex;
+    justify-content: space-between;
+    border-radius: $borderRadius;
+    padding: 20px 30px;
+
+    img {
+      width: 50px;
+    }
+
+    input {
+      display: none;
+    }
+
+    .label-image {
+      img.on {
+        display: none;
+      }
+    }
+
+    input[type='radio']:checked+.label-image {
+      img.on {
+        display: inline;
+        animation-name: statusClick;
+        animation-duration: 0.5s;
+      }
+      img.off {
+        display: none;
+      }
+    }
+  }
+
+  &-whiteWalker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 0 0 $borderRadius $borderRadius;
+    color: white;
+    background-color: $blue;
+
+    label {
+      font-weight: 700;
+      position: relative;
+      cursor: pointer;
+      padding-right: 30px;
+
+      input {
+        display: none;
+      }
+
+      .box {
+        position: absolute;
+        top: -3px;
+        right: 0;
+        border: 2px solid white;
+        height: 18px;
+        width: 18px;
+        border-radius: $borderRadius;
+
+        .checked--container {
+          position: relative;
+
+          .checked {
+            position: absolute;
+            border-radius: $borderRadius;
+            background: white;
+            height: 12px;
+            width: 12px;
+            top: 3px;
+            left: 3px;
+            display: none;
+          }
+        }
+      }
+      input[type='checkbox']:checked+.box {
+        .checked {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@keyframes statusClick {
+  0% {
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
