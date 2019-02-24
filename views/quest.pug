@@ -14,9 +14,9 @@ block content
 
       .button-container
         if lastPage
-          button#button.custom--button(onclick="gotForecast.formHandler.submitForm(forecast)") submit
+          button#button.custom--button.huge(onclick="gotForecast.formHandler.submitForm(forecast)") submit
         else
-          button#button.custom--button(
+          button#button.custom--button.huge(
             onclick=`gotForecast.formHandler.storeAnswers(forecast, ${parseInt(page) +1})`,
-            disabled) Next
+            disabled) Next &rarr;
 

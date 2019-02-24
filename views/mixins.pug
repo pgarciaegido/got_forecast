@@ -1,10 +1,11 @@
 mixin characterItem(character, length)
   .character-item
 
-    img.character-item-image(src=`/images/${character.idName}.jpg`, onerror="this.src='/images/jonSnow.jpg'")
-    h3.character-item-name=character.name
-
-    p.character-item-description Little description here blablasdnja askndlasndasnd nasd k nasdkand nsakndkasnd asdka nakkdnaksdand kasdnk
+    img.character-item-image(
+      src=`/images/${character.idName}.jpg`,
+      title=`Credits: ${character.imgCredits}`)
+    h3.character-item-name
+      a(href=`https://gameofthrones.fandom.com/wiki/${character.wikiName}`, target="_blank")=character.name
 
     .character-item-status
       label.alive-label
@@ -28,6 +29,7 @@ mixin characterItem(character, length)
           img.off(src="/images/skull-gray.svg")
           img.on(src="/images/skull-red.svg")
     
+    //.character-item-whiteWalker--container
     .character-item-whiteWalker
       label White Walker?
         input(
@@ -35,6 +37,10 @@ mixin characterItem(character, length)
           name=`whitewalker-${character.idName}`,
           value="true"
         )
+        .box
+          .checked--container
+            .checked
+
 
 mixin dialogCharacterInfo(characterIdName)
   #dialog-content

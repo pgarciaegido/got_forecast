@@ -55,7 +55,14 @@ const createInput = (formAnswers, key) => {
 const enableButton = (form, numberOfCharactersOnPage) => {
   const button = document.getElementById('button');
   if (button.hasAttribute('disabled')) {
-    if (Object.keys(formSerialize(form, { hash: true })).length === numberOfCharactersOnPage) {
+    const formattedForm = formSerialize(form, { hash: true });
+
+    const numberOfStatusChecked = Object.keys(formattedForm).reduce((acc, key) => {
+      if (/status/.test(key)) acc++;
+      return acc;
+    }, 0);
+
+    if (numberOfStatusChecked === numberOfCharactersOnPage) {
       button.removeAttribute('disabled');
     }
   }

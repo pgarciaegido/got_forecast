@@ -1,110 +1,164 @@
 [
   {
     "name": "Jon Snow",
-    "idName": "jonSnow"
+    "idName": "jonSnow",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Jon_Snow"
   },
   { 
     "name":"Sansa Stark",
-    "idName": "sansaStark"
+    "idName": "sansaStark",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Sansa_Stark"
   },
   {
     "name": "Arya Stark",
-    "idName": "aryaStark"
+    "idName": "aryaStark",
+    "imgCredits": "Suzi Pratt",
+    "wikiName": "Arya_Stark"
   },
   {
     "name": "Bran Stark",
-    "idName": "branStark"
+    "idName": "branStark",
+    "imgCredits": "Tamara Craiu",
+    "wikiName": "Bran_Stark"
   },
   { 
-    "name":"Cercei Lannister",
-    "idName": "cerceiLannister"
+    "name":"Cersei Lannister",
+    "idName": "cerseiLannister",
+    "imgCredits": "Denny Harrison",
+    "wikiName": "Cersei_Lannister"
   },
   {
     "name": "Jaime Lannister",
-    "idName": "jaimeLannister"
+    "idName": "jaimeLannister",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Jaime_Lannister"
   },
   {
     "name": "Tyrion Lannister",
-    "idName": "tyrionLannister"
+    "idName": "tyrionLannister",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Tyrion_Lannister"
   },
   { 
     "name":"Daenerys Targaryen",
-    "idName": "daenerysTargaryen"
+    "idName": "daenerysTargaryen",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Daenerys_Targaryen"
   },
   {
     "name": "Yara Greyjoy",
-    "idName": "yaraGreyjoy"
+    "idName": "yaraGreyjoy",
+    "imgCredits": "PPL Projects",
+    "wikiName": "Yara_Greyjoy"
   },
   {
     "name": "Theon Greyjoy",
-    "idName": "theonGreyjoy"
+    "idName": "theonGreyjoy",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Theon_Greyjoy"
   },
   { 
     "name":"Euron Greyjoy",
-    "idName": "euronGreyjoy"
+    "idName": "euronGreyjoy",
+    "imgCredits": "Ra Boe",
+    "wikiName": "Euron_Greyjoy"
   },
   {
     "name": "Melisandre",
-    "idName": "melisandre"
+    "idName": "melisandre",
+    "imgCredits": "Thor NL | Thierry Caro",
+    "wikiName": "Melisandre"
   },
   {
     "name": "Jorah Mormont",
-    "idName": "jorahMormont"
+    "idName": "jorahMormont",
+    "imgCredits": "Kosika",
+    "wikiName": "Jorah_Mormont"
   },
   { 
     "name":"The Hound",
-    "idName": "theHound"
+    "idName": "theHound",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Sandor_Clegane"
   },
   {
     "name": "The Mountain",
-    "idName": "theMountain"
+    "idName": "theMountain",
+    "imgCredits": "Paula  R. Lively",
+    "wikiName": "Gregor_Clegane"
   },
   {
     "name": "Samwell Tarly",
-    "idName": "samwellTarly"
+    "idName": "samwellTarly",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Samwell_Tarly"
   },
   { 
     "name":"Gilly",
-    "idName": "gilly"
+    "idName": "gilly",
+    "imgCredits": "Vera de Kok",
+    "wikiName": "Gilly"
   },
   {
     "name": "Sam (Small Child)",
-    "idName": "samChild"
+    "idName": "samChild",
+    "imgCredits": "",
+    "wikiName": "Sam"
   },
   {
     "name": "Lord Varys",
-    "idName": "lordVarys"
+    "idName": "lordVarys",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Varys"
   },
   {
     "name": "Brienne of Tarth",
-    "idName": "brienneOfTarth"
+    "idName": "brienneOfTarth",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Brienne_of_Tarth"
   },
   { 
     "name":"Davos Seaworth",
-    "idName": "davosSeaworth"
+    "idName": "davosSeaworth",
+    "imgCredits": "Floris Looijesteijn",
+    "wikiName": "Davos_Seaworth"
   },
   {
     "name": "Bronn",
-    "idName": "bronn"
+    "idName": "bronn",
+    "imgCredits": "dalekhelen",
+    "wikiName": "Bronn"
   },
   {
     "name": "Podrick Payne",
-    "idName": "podrickPayne"
+    "idName": "podrickPayne",
+    "imgCredits": "Rogi Lensing",
+    "wikiName": "Podrick_Payne"
   },
   { 
     "name":"Tormund Giantsbane",
-    "idName": "tormundGiantsbane"
+    "idName": "tormundGiantsbane",
+    "imgCredits": "Patrik Nygren",
+    "wikiName": "Tormund"
   },
   {
     "name": "Grey Worm",
-    "idName": "greyWorm"
+    "idName": "greyWorm",
+    "imgCredits": "Gage Skidmore",
+    "wikiName": "Grey_Worm"
   },
   {
     "name": "Gendry",
-    "idName": "gendry"
+    "idName": "gendry",
+    "imgCredits": "Imanolvillegas",
+    "wikiName": "Gendry"
   },
   {
     "name": "Beric Dondarrion",
-    "idName": "bericDondarrion"
+    "idName": "bericDondarrion",
+    "imgCredits": "Joseph Sinclair",
+    "wikiName": "Beric_Dondarrion"
   }
 ]
