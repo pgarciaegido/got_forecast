@@ -4,12 +4,24 @@
     div {
       text-align: center;
     }
-    .results {
-      background-color: lightgray;
-      padding: 10px;
-      margin-bottom: 10px;
-      .character-info {
+
+    .results-column {
+      padding: 0 10px;
+      box-sizing: border-box;
+
+      .card {
+        padding: 20px;
+        background-color: white;
+        border-radius: $borderRadius;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 2em;
+        font-weight: 500;
+        color: $darkSlateGray;
+  
         img {
+          width: 100%;
           border-radius: 50%;
         }
       }

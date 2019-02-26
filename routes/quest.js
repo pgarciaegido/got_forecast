@@ -13,7 +13,11 @@ const questRH = (req, res) => {
   return res.render('quest.pug', {characters, page, lastPage});
 };
 
-const submitRH = (req, res) => res.render('forecastResults.pug', { results: formatForm(req.body) });
+const submitRH = (req, res) => {
+  const formResults = formatForm(req.body);
+
+  res.render('forecastResults.pug', { dead:formResults.dead, alive: formResults.alive });
+};
 
 const downloadPicture = async (req, res) => {
   await downloadReport(req.query.html);
@@ -28,11 +32,15 @@ const formatForm = (payload) => {
     const reply = field.split('-')[0];
     const characterNameId = field.split('-')[1];
 
-    acc.hasOwnProperty(characterNameId) 
-      ? acc[characterNameId][reply] = payload[field]
-      : acc[characterNameId] = { [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name};
+    if (payload[field] === 'alive') {
+      acc.alive.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
+    } else {
+      acc.dead.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
+    }
+
     return acc;
-  }, {});
+    
+  }, { dead: [], alive: [] });
 };
 
 const getCharacterFromNameId = nameId => allCharacters.find(char => char.idName === nameId);

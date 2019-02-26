@@ -9,18 +9,20 @@ block content
 
     .results-table
       .pure-g.header
-        .pure-u-1-3.character-info
-          p Character
-        .pure-u-1-3.character-info
-          p Status
-        .pure-u-1-3.character-info
-          p WhiteWalker?
-      each val, character in results
-        .pure-g.results
-          .pure-u-1-3.character-info
-            img(src=`images/${character}.jpg`, style="width: 30px")
-            p=val.nameToDisplay
-          .pure-u-1-3
-            p=val.status
-          .pure-u-1-3
-            p=val.whitewalker
+        .pure-u-1-2.results-column
+          h2 Alive
+          each a in alive
+            .alive-card.card.pure-g
+              .pure-u-1-4
+                img(src=`/images/${a.id}.jpg`)
+              .pure-u-3-4
+                p.name=a.nameToDisplay
+
+        .pure-u-1-2.results-column
+          h2 Dead
+          each d in dead
+            .dead-card.card.pure-g
+              .pure-u-1-4
+                img(src=`/images/${d.id}.jpg`)
+              .pure-u-3-4
+                p.name=d.nameToDisplay
