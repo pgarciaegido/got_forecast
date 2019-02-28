@@ -9,20 +9,24 @@ block content
 
     .results-table
       .pure-g.header
-        .pure-u-1-2.results-column
-          h2 Alive
-          each a in alive
-            .alive-card.card.pure-g
-              .pure-u-1-4
-                img(src=`/images/${a.id}.jpg`)
-              .pure-u-3-4
-                p.name=a.nameToDisplay
+        .pure-u-1-2
+          .results-column.alive-column
+            h2 Alive
+            each a in alive
+              .pure-u-1-2.card-container
+                .alive-card.card.pure-g
+                  .pure-u-1-4
+                    img(src=`/images/${a.id}.jpg`)
+                  .pure-u-3-4
+                    p.name=a.nameToDisplay
 
-        .pure-u-1-2.results-column
-          h2 Dead
-          each d in dead
-            .dead-card.card.pure-g
-              .pure-u-1-4
-                img(src=`/images/${d.id}.jpg`)
-              .pure-u-3-4
-                p.name=d.nameToDisplay
+        .pure-u-1-2
+          .results-column.dead-column
+            h2 Dead
+            each d in dead
+              .pure-u-1-2.card-container
+                .dead-card.card.pure-g
+                  .pure-u-1-4
+                    img(src=`/images/${d.id}.jpg`)
+                  .pure-u-3-4
+                    p.name=d.nameToDisplay

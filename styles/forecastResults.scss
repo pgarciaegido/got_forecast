@@ -6,25 +6,38 @@
     }
 
     .results-column {
-      padding: 0 10px;
+      padding: 10px;
       box-sizing: border-box;
+      background-color: #5a5f66;
 
       .card {
-        padding: 20px;
+        padding: 10px;
         background-color: white;
         border-radius: $borderRadius;
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
-        font-size: 2em;
+        font-size: 1em;
         font-weight: 500;
         color: $darkSlateGray;
+        margin: 10px;
   
         img {
           width: 100%;
           border-radius: 50%;
         }
       }
+      .card.alive-card {
+        border-left: 5px solid $lightGreen;
+      }
+      .card.dead-card {
+        border-left: 5px solid $sunsetOrange;
+      }
+    }
+    .results-column.alive-column {
+      margin-right: 10px;
+    }
+    .results-column.dead-column {
+      margin-left: 10px;
     }
   }
 }
