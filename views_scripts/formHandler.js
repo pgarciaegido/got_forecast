@@ -18,7 +18,7 @@ const submitForm = (form) => {
   event.preventDefault();
   var obj = formSerialize(form, { hash: true });
   const formAnswers = Object.assign(getLocalStorageItem() , obj);
-
+  setLocalStorageItem(formAnswers);
   var newForm = createForm();
 
   Object.keys(formAnswers).forEach((key) => newForm.appendChild(createInput(formAnswers, key)));
@@ -68,4 +68,4 @@ const enableButton = (form, numberOfCharactersOnPage) => {
   }
 }
 
-module.exports = { storeAnswers, submitForm, enableButton };
+module.exports = { storeAnswers, submitForm, enableButton, getLocalStorageItem };

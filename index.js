@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { questRH, submitRH, downloadPicture } = require('./routes/quest'); 
+const { resultsRH } = require('./routes/results');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get('/', (req, res) => res.render('landing.pug'));
 app.get('/quest', questRH);
 app.post('/submit', submitRH);
 app.get('/download-image', downloadPicture);
+app.get('/results', resultsRH);
 
 app.use((req, res) => res.status(404).redirect('/'));
 

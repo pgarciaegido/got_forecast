@@ -5,6 +5,7 @@ include ./mixins.pug
 block content
   #forecast-results
     button.pure-button(onclick="gotForecast.download.passWholePage()") download pic
+    button.pure-button(onclick="gotForecast.download.shareLink()") Share link
     h1 Your forecast!
 
     .results-table
