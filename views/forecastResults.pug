@@ -3,9 +3,12 @@ extends main.pug
 include ./mixins.pug
 
 block content
+  .modal#share
   #forecast-results
     button.pure-button(onclick="gotForecast.download.passWholePage()") download pic
+    a.pure-button(onclick="gotForecast.download.openModal('share')") Share link
     button.pure-button(onclick="gotForecast.download.shareLink()") Share link
+
     h1 Your forecast!
 
     .results-table

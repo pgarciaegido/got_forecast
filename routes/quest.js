@@ -32,9 +32,11 @@ const formatForm = (payload) => {
     const reply = field.split('-')[0];
     const characterNameId = field.split('-')[1];
 
+    console.log(payload[field]);
+
     if (payload[field] === 'alive') {
       acc.alive.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
-    } else {
+    } else if (payload[field] === 'dead') {
       acc.dead.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
     }
 

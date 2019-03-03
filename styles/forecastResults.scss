@@ -1,3 +1,19 @@
+.modal {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+
+  &:target {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#share:target {
+  width: 100px;
+  height: 100px;
+}
+
 #forecast-results {
   .results-table {
 

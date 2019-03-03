@@ -13,4 +13,6 @@ const shareLink = () => {
 
 }
 
-module.exports = { passWholePage, shareLink };
+const openModal = (hash) => location.hash = `#${hash}`;
+
+module.exports = { passWholePage, shareLink, openModal };
