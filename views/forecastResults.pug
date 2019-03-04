@@ -3,7 +3,15 @@ extends main.pug
 include ./mixins.pug
 
 block content
-  .modal#share
+  .modal#share(onclick="gotForecast.download.closeModal()")
+    .modal-content(onclick="event.stopPropagation()")
+      h3 Share your results!
+      label Your name
+        input#username(type="text")
+      label Your link
+        input#sharelink(type="text")
+      
+
   #forecast-results
     button.pure-button(onclick="gotForecast.download.passWholePage()") download pic
     a.pure-button(onclick="gotForecast.download.openModal('share')") Share link

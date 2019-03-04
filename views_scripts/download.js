@@ -10,9 +10,16 @@ const shareLink = () => {
   const results = getLocalStorageItem();
 
   window.open(`/results?${queryString.stringify(results)}`);
-
 }
 
-const openModal = (hash) => location.hash = `#${hash}`;
+const openModal = (hash) => {
+  const results = getLocalStorageItem();
+  const linkInput = document.getElementById('sharelink');
+  linkInput.value = `/results?${queryString.stringify(results)}`;
+  linkInput.disabled = true;
+  location.hash = `#${hash}`;
+}
 
-module.exports = { passWholePage, shareLink, openModal };
+const closeModal = () => location.hash = "";
+
+module.exports = { passWholePage, shareLink, openModal, closeModal };

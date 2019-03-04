@@ -1,17 +1,53 @@
 .modal {
-  background-color: red;
-  height: 10px;
-  width: 10px;
+  background-color: $transparentGray;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  //transition: 0.2s;
+  // display: none;
+  
+  &-content {
+    transform: translateY(-500px);
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: $borderRadius;
+    padding: 20px;
+    z-index: 2;
 
-  &:target {
-    width: 100px;
-    height: 100px;
+    h3 {
+      color: $jonquil;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      color: $darkSlateGray;
+      width: 100%;
+      margin-bottom: 20px;
+
+      input {
+        width: 100%;
+      }
+    }
   }
 }
 
+
 #share:target {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  // display: block;
+
+  .modal-content {
+    transform: translateY(50%);
+    transition: transform 300ms linear;
+  }
 }
 
 #forecast-results {
