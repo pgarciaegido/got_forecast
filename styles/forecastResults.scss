@@ -35,6 +35,20 @@
         width: 100%;
       }
     }
+
+    #link-container {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      
+      label {
+        width: 90%;
+      }
+
+      span {
+        color: $jonquil;
+      }
+    }
   }
 }
 

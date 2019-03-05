@@ -13,13 +13,22 @@ const shareLink = () => {
 }
 
 const openModal = (hash) => {
-  const results = getLocalStorageItem();
-  const linkInput = document.getElementById('sharelink');
-  linkInput.value = `/results?${queryString.stringify(results)}`;
-  linkInput.disabled = true;
   location.hash = `#${hash}`;
 }
 
 const closeModal = () => location.hash = "";
 
-module.exports = { passWholePage, shareLink, openModal, closeModal };
+const fillName = (username) => {
+  const results = getLocalStorageItem();
+  const linkInput = document.getElementById('sharelink');
+  linkInput.value = `/results?${queryString.stringify(results)}&name=${username}`;
+  document.getElementById('link-container').style.display = "flex";
+}
+
+const copyLink = () => {
+  const linkInput = document.getElementById('sharelink');
+  linkInput.select();
+  document.execCommand("copy");
+};
+
+module.exports = { passWholePage, shareLink, openModal, closeModal, fillName, copyLink };
