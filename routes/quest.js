@@ -16,7 +16,7 @@ const questRH = (req, res) => {
 const submitRH = (req, res) => {
   const formResults = formatForm(req.body);
 
-  res.render('forecastResults.pug', { dead:formResults.dead, alive: formResults.alive });
+  res.render('forecastResults.pug', { dead:formResults.dead, alive: formResults.alive, selfResults: true });
 };
 
 const downloadPicture = async (req, res) => {

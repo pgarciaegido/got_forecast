@@ -13,13 +13,26 @@ block content
           input#sharelink(type="text")
         span(onclick="gotForecast.download.copyLink()") copy
       
-
   #forecast-results
-    button.pure-button(onclick="gotForecast.download.passWholePage()") download pic
-    a.pure-button(onclick="gotForecast.download.openModal('share')") Share link
-    button.pure-button(onclick="gotForecast.download.shareLink()") Share link
+    // button.pure-button(onclick="gotForecast.download.passWholePage()") download pic
+    
+    // button.pure-button(onclick="gotForecast.download.shareLink()") Share link
 
-    h1 Your forecast!
+    // SELF RESULTS
+    .pure-g.header
+      if selfResults
+        .pure-u-1-2
+          h1 Your forecast!
+        .pure-u-1-2.claim
+          a#button.custom--button.huge(onclick="gotForecast.download.openModal('share')") Share your results!
+      else
+        .pure-u-1-2
+          h1 This is &nbsp;
+            if userName
+              span= userName
+                span 's forecast!
+        .pure-u-1-2.claim
+          a#button.custom--button.huge(href="/") Do your own!
 
     .results-table
       .pure-g.header
