@@ -19,13 +19,6 @@ const submitRH = (req, res) => {
   res.render('forecastResults.pug', { dead:formResults.dead, alive: formResults.alive, selfResults: true });
 };
 
-const downloadPicture = async (req, res) => {
-  await downloadReport(req.query.html);
-  res.setHeader('Content-disposition', 'attachment; filename=hola.png');
-  res.setHeader('Content-type', 'image/png');
-  res.download(__dirname + '/../hola.png');
-};
-
 const formatForm = (payload) => {
 
   return Object.keys(payload).reduce((acc, field) => {
@@ -47,4 +40,4 @@ const formatForm = (payload) => {
 
 const getCharacterFromNameId = nameId => allCharacters.find(char => char.idName === nameId);
 
-module.exports = { questRH, submitRH, downloadPicture };
+module.exports = { questRH, submitRH };

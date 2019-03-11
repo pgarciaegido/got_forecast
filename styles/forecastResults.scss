@@ -47,6 +47,17 @@
 
       span {
         color: $jonquil;
+        padding-right: 10px;
+      }
+      
+      span.animate {        
+        animation: 1600ms pulsate infinite alternate ease-in-out;
+      }
+
+      @keyframes pulsate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
       }
     }
   }
@@ -61,6 +72,21 @@
   .modal-content {
     transform: translateY(50%);
     transition: transform 300ms linear;
+
+    label {
+      color: $richBlack;
+      font-size: 1.3em;
+      font-weight: 500;
+      input {
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        background-color: $jonquil;
+        color: white;
+        margin-top: 5px;
+      }
+    }
   }
 }
 

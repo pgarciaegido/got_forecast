@@ -1,7 +1,7 @@
 const formHandler = require('./formHandler');
-const download = require('./download');
+const share = require('./share');
 
 module.exports = {
-  download,
+  share,
   formHandler
 }

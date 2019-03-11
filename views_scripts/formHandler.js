@@ -9,8 +9,6 @@ const storeAnswers = (form, pageTo) => {
   // pageTo 2 means that we are currently on page 1.
   pageTo === 2 ? setLocalStorageItem(obj) : setLocalStorageItem(Object.assign(getLocalStorageItem(), obj));
 
-  console.log(pageTo);
-
   redirectToNextPage(pageTo)
 }
 
