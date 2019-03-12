@@ -18,37 +18,39 @@ block content
     // SELF RESULTS
     .pure-g.header
       if selfResults
-        .pure-u-1-2
+        .pure-u-1.pure-u-sm-1-2
           h1 Your forecast!
-        .pure-u-1-2.claim
-          a#button.custom--button.huge(onclick="gotForecast.share.openModal('share')") Share your results!
+        .pure-u-1.pure-u-sm-1-2.claim
+          .custom--button.button(onclick="gotForecast.share.openModal('share')")
+            a#button Share your results!
       else
-        .pure-u-1-2
+        .pure-u-1.pure-u-sm-1-2.claim
           h1 This is &nbsp;
             if userName
               span= userName
                 span 's forecast!
-        .pure-u-1-2.claim
-          a#button.custom--button.huge(href="/") Do your own!
+        .pure-u-1.pure-u-sm-1-2.claim
+          .custom--button.button(onclick="window.location.href='/'")
+            a#button(href="/") Do your own!
 
     .results-table
       .pure-g.header
-        .pure-u-1-2
+        .pure-u-sm-1.pure-u-md-1-2
           .results-column.alive-column
             h2 Alive
             each a in alive
-              .pure-u-1-2.card-container
+              .pure-u-1.pure-u-sm-1-2.card-container
                 .alive-card.card.pure-g
                   .pure-u-1-4
                     img(src=`/images/${a.id}.jpg`)
                   .pure-u-3-4
                     p.name=a.nameToDisplay
 
-        .pure-u-1-2
+        .pure-u-sm-1.pure-u-md-1-2
           .results-column.dead-column
             h2 Dead
             each d in dead
-              .pure-u-1-2.card-container
+              .pure-u-1.pure-u-sm-1-2.card-container
                 .dead-card.card.pure-g
                   .pure-u-1-4
                     img(src=`/images/${d.id}.jpg`)

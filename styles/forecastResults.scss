@@ -99,9 +99,13 @@
       margin: 0;
     }
     .claim {
-      text-align: right;
-      a {
+      box-sizing: border-box;
+      
+      .button {
         cursor: pointer;
+        width: 50%;
+        text-align: center;
+        float: right;
       }
     }
   }
@@ -144,6 +148,27 @@
     }
     .results-column.dead-column {
       margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #forecast-results {
+    .header {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+      }
+
+      .claim {
+        .button {
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+    }
+    h2 {
+      letter-spacing: normal;
     }
   }
 }
