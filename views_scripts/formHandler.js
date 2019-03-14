@@ -1,5 +1,7 @@
 const formSerialize = require('form-serialize');
 
+const formValuesHelper = require('../helpers/formValuesHelper');
+
 const localStorageName = 'gotForecast';
 
 const storeAnswers = (form, pageTo) => {
@@ -54,9 +56,10 @@ const enableButton = (form, numberOfCharactersOnPage) => {
   const button = document.getElementById('button');
   if (button.hasAttribute('disabled')) {
     const formattedForm = formSerialize(form, { hash: true });
+    const regex = new RegExp(formValuesHelper.formats.state.vitalStatus.prefix);
 
     const numberOfStatusChecked = Object.keys(formattedForm).reduce((acc, key) => {
-      if (/status/.test(key)) acc++;
+      if (regex.test(key)) acc++;
       return acc;
     }, 0);
 

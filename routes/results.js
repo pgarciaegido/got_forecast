@@ -1,14 +1,23 @@
 const characters = require('../db/characters.json');
+const formValuesHelper = require('../helpers/formValuesHelper');
 
 const resultsRH = (req, res) => {
   const userName = req.query.name;
   const results = characters.reduce((acc, char) => {
-    acc[req.query[`status-${char.idName}`]].push({id: char.idName, nameToDisplay: char.name });
+    acc[req.query[`${formValuesHelper.formats.state.vitalStatus.prefix}${formValuesHelper.formats.separator}${char[formValuesHelper.formats.state.vitalStatus.field]}`]]
+      .push({id: char.idName, nameToDisplay: char.name });
     return acc;
 
-  }, {alive: [], dead: []});
+  }, {[formValuesHelper.values.vitalStatus.alive]: [], [formValuesHelper.values.vitalStatus.dead]: []});
 
-  res.render('forecastResults.pug', { userName, dead: results.dead, alive: results.alive, selfResults: false });
+  console.log(results);
+
+  res.render('forecastResults.pug', {
+    userName,
+    dead: results[formValuesHelper.values.vitalStatus.dead],
+    alive: results[formValuesHelper.values.vitalStatus.alive],
+    selfResults: false 
+  });
 };
 
 module.exports = {

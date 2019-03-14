@@ -1,162 +1,189 @@
 [
   {
     "name": "Jon Snow",
+    "id": "1",
     "idName": "jonSnow",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Jon_Snow"
   },
   { 
     "name":"Sansa Stark",
+    "id": "2",
     "idName": "sansaStark",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Sansa_Stark"
   },
   {
     "name": "Arya Stark",
+    "id": "3",
     "idName": "aryaStark",
     "imgCredits": "Suzi Pratt",
     "wikiName": "Arya_Stark"
   },
   {
     "name": "Bran Stark",
+    "id": "4",
     "idName": "branStark",
     "imgCredits": "Tamara Craiu",
     "wikiName": "Bran_Stark"
   },
   { 
     "name":"Cersei Lannister",
+    "id": "5",
     "idName": "cerseiLannister",
     "imgCredits": "Denny Harrison",
     "wikiName": "Cersei_Lannister"
   },
   {
     "name": "Jaime Lannister",
+    "id": "6",
     "idName": "jaimeLannister",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Jaime_Lannister"
   },
   {
     "name": "Tyrion Lannister",
+    "id": "7",
     "idName": "tyrionLannister",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Tyrion_Lannister"
   },
   { 
     "name":"Daenerys Targaryen",
+    "id": "8",
     "idName": "daenerysTargaryen",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Daenerys_Targaryen"
   },
   {
     "name": "Yara Greyjoy",
+    "id": "9",
     "idName": "yaraGreyjoy",
     "imgCredits": "PPL Projects",
     "wikiName": "Yara_Greyjoy"
   },
   {
     "name": "Theon Greyjoy",
+    "id": "10",
     "idName": "theonGreyjoy",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Theon_Greyjoy"
   },
   { 
     "name":"Euron Greyjoy",
+    "id": "11",
     "idName": "euronGreyjoy",
     "imgCredits": "Ra Boe",
     "wikiName": "Euron_Greyjoy"
   },
   {
     "name": "Melisandre",
+    "id": "12",
     "idName": "melisandre",
     "imgCredits": "Thor NL | Thierry Caro",
     "wikiName": "Melisandre"
   },
   {
     "name": "Jorah Mormont",
+    "id": "13",
     "idName": "jorahMormont",
     "imgCredits": "Kosika",
     "wikiName": "Jorah_Mormont"
   },
   { 
     "name":"The Hound",
+    "id": "14",
     "idName": "theHound",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Sandor_Clegane"
   },
   {
     "name": "The Mountain",
+    "id": "15",
     "idName": "theMountain",
     "imgCredits": "Paula  R. Lively",
     "wikiName": "Gregor_Clegane"
   },
   {
     "name": "Samwell Tarly",
+    "id": "16",
     "idName": "samwellTarly",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Samwell_Tarly"
   },
   { 
     "name":"Gilly",
+    "id": "17",
     "idName": "gilly",
     "imgCredits": "Vera de Kok",
     "wikiName": "Gilly"
   },
   {
     "name": "Sam (Small Child)",
+    "id": "18",
     "idName": "samChild",
     "imgCredits": "",
     "wikiName": "Sam"
   },
   {
     "name": "Lord Varys",
+    "id": "19",
     "idName": "lordVarys",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Varys"
   },
   {
     "name": "Brienne of Tarth",
+    "id": "20",
     "idName": "brienneOfTarth",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Brienne_of_Tarth"
   },
   { 
     "name":"Davos Seaworth",
+    "id": "21",
     "idName": "davosSeaworth",
     "imgCredits": "Floris Looijesteijn",
     "wikiName": "Davos_Seaworth"
   },
   {
     "name": "Bronn",
+    "id": "22",
     "idName": "bronn",
     "imgCredits": "dalekhelen",
     "wikiName": "Bronn"
   },
   {
     "name": "Podrick Payne",
+    "id": "23",
     "idName": "podrickPayne",
     "imgCredits": "Rogi Lensing",
     "wikiName": "Podrick_Payne"
   },
   { 
     "name":"Tormund Giantsbane",
+    "id": "24",
     "idName": "tormundGiantsbane",
     "imgCredits": "Patrik Nygren",
     "wikiName": "Tormund"
   },
   {
     "name": "Grey Worm",
+    "id": "25",
     "idName": "greyWorm",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Grey_Worm"
   },
   {
     "name": "Gendry",
+    "id": "26",
     "idName": "gendry",
     "imgCredits": "Imanolvillegas",
     "wikiName": "Gendry"
   },
   {
     "name": "Beric Dondarrion",
+    "id": "27",
     "idName": "bericDondarrion",
     "imgCredits": "Joseph Sinclair",
     "wikiName": "Beric_Dondarrion"

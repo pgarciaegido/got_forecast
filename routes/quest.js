@@ -1,5 +1,5 @@
 const allCharacters = require('../db/characters.json');
-const downloadReport = require('../downloadReport');
+const formValuesHelper = require('../helpers/formValuesHelper');
 
 const questRH = (req, res) => {
 
@@ -10,7 +10,7 @@ const questRH = (req, res) => {
   let characters = allCharacters.slice(startIndex, startIndex + charactersPerPage);  
   let lastPage = (page * charactersPerPage) >= allCharacters.length;
   
-  return res.render('quest.pug', {characters, page, lastPage});
+  return res.render('quest.pug', {characters, page, lastPage, formValuesHelper});
 };
 
 const submitRH = (req, res) => {
@@ -26,15 +26,14 @@ const formatForm = (payload) => {
 
   return Object.keys(payload).reduce((acc, field) => {
 
-    const reply = field.split('-')[0];
-    const characterNameId = field.split('-')[1];
+    const characterId = field.split(formValuesHelper.formats.separator)[1];
     
-    if (payload[field] === 'alive') {
+    if (payload[field] === formValuesHelper.values.vitalStatus.alive) {
       acc.numberOfCharacters++;
-      acc.alive.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
-    } else if (payload[field] === 'dead') {
+      acc.alive.push({ id: getCharacterFromId(characterId).idName, nameToDisplay: getCharacterFromId(characterId).name});
+    } else if (payload[field] === formValuesHelper.values.vitalStatus.dead) {
       acc.numberOfCharacters++;
-      acc.dead.push({ id: characterNameId, [reply]: payload[field], nameToDisplay: getCharacterFromNameId(characterNameId).name});
+      acc.dead.push({ id: getCharacterFromId(characterId).idName, nameToDisplay: getCharacterFromId(characterId).name });
     }
 
     return acc;
@@ -42,6 +41,6 @@ const formatForm = (payload) => {
   }, { dead: [], alive: [], numberOfCharacters: 0 });
 };
 
-const getCharacterFromNameId = nameId => allCharacters.find(char => char.idName === nameId);
+const getCharacterFromId = id => allCharacters.find(char => char[formValuesHelper.formats.state.vitalStatus.field] === id);
 
 module.exports = { questRH, submitRH };

@@ -10,7 +10,7 @@ block content
         - const length = characters.length
         each c in characters
           .pure-u-1.pure-u-md-12-24.pure-u-lg-8-24.item-container
-            +characterItem(c, length)
+            +characterItem(c, length, formValuesHelper)
 
       .button-container
         if lastPage
