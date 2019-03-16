@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+# If test do not pass, do not continue
+set -e
+
+npm test
+
 commitSHA=$(git rev-parse --short HEAD)
 commitMessage=$(git log -1 --pretty=%B)
+
 
 rm -rf public
 git checkout master

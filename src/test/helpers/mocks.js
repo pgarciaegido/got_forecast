@@ -1,0 +1,63 @@
+const rawResult = {
+  'vs-1': '1',
+  'vs-2': '0',
+  'vs-3': '1',
+  'vs-4': '0',
+  'vs-5': '1',
+  'vs-6': '0',
+  'vs-7': '1',
+  'vs-8': '0',
+  'vs-9': '0',
+  'vs-10': '0',
+  'vs-11': '0',
+  'vs-12': '1',
+  'vs-13': '0',
+  'vs-14': '1',
+  'vs-15': '0',
+  'vs-16': '0',
+  'vs-17': '0',
+  'vs-18': '1',
+  'vs-19': '1',
+  'vs-20': '0',
+  'vs-21': '0',
+  'vs-22': '0',
+  'vs-23': '0',
+  'vs-24': '1',
+  'vs-25': '0',
+  'vs-26': '0',
+  'vs-27': '1'
+};
+
+const formattedResult = {
+  '0':
+    [{ id: 'sansaStark', nameToDisplay: 'Sansa Stark' },
+    { id: 'branStark', nameToDisplay: 'Bran Stark' },
+    { id: 'jaimeLannister', nameToDisplay: 'Jaime Lannister' },
+    { id: 'daenerysTargaryen', nameToDisplay: 'Daenerys Targaryen' },
+    { id: 'yaraGreyjoy', nameToDisplay: 'Yara Greyjoy' },
+    { id: 'theonGreyjoy', nameToDisplay: 'Theon Greyjoy' },
+    { id: 'euronGreyjoy', nameToDisplay: 'Euron Greyjoy' },
+    { id: 'jorahMormont', nameToDisplay: 'Jorah Mormont' },
+    { id: 'theMountain', nameToDisplay: 'The Mountain' },
+    { id: 'samwellTarly', nameToDisplay: 'Samwell Tarly' },
+    { id: 'gilly', nameToDisplay: 'Gilly' },
+    { id: 'brienneOfTarth', nameToDisplay: 'Brienne of Tarth' },
+    { id: 'davosSeaworth', nameToDisplay: 'Davos Seaworth' },
+    { id: 'bronn', nameToDisplay: 'Bronn' },
+    { id: 'podrickPayne', nameToDisplay: 'Podrick Payne' },
+    { id: 'greyWorm', nameToDisplay: 'Grey Worm' },
+    { id: 'gendry', nameToDisplay: 'Gendry' }],
+  '1':
+    [{ id: 'jonSnow', nameToDisplay: 'Jon Snow' },
+    { id: 'aryaStark', nameToDisplay: 'Arya Stark' },
+    { id: 'cerseiLannister', nameToDisplay: 'Cersei Lannister' },
+    { id: 'tyrionLannister', nameToDisplay: 'Tyrion Lannister' },
+    { id: 'melisandre', nameToDisplay: 'Melisandre' },
+    { id: 'theHound', nameToDisplay: 'The Hound' },
+    { id: 'samChild', nameToDisplay: 'Sam (Small Child)' },
+    { id: 'lordVarys', nameToDisplay: 'Lord Varys' },
+    { id: 'tormundGiantsbane', nameToDisplay: 'Tormund Giantsbane' },
+    { id: 'bericDondarrion', nameToDisplay: 'Beric Dondarrion' }]
+};
+
+module.exports = { rawResult, formattedResult };
