@@ -1,11 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 const { questRH, submitRH } = require('./routes/quest'); 
 const { resultsRH } = require('./routes/results');
 
 const app = express();
 
 app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, '../frontend/views'));
 app.use(express.static('public'));
 
 app.use(bodyParser.json());

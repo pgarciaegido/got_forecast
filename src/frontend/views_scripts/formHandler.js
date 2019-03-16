@@ -1,6 +1,6 @@
 const formSerialize = require('form-serialize');
 
-const formValuesHelper = require('../helpers/formValuesHelper');
+const formValuesHelper = require('../../helpers/formValuesHelper');
 
 const localStorageName = 'gotForecast';
 

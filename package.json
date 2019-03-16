@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start-dev": "npm run build-dev && nodemon --inspect index.js",
+    "start-dev": "npm run build-dev && nodemon --inspect src/backend/index.js",
     "build-dev": "npm run styles && npm run scripts",
     "build": "npm run build-dev && npm run images",
     "scripts": "webpack",
     "images": "imagemin assets/images/* --out-dir=public/images",
-    "styles": "node-sass --output-style compressed styles/main.scss public/styles/index.css",
+    "styles": "node-sass --output-style compressed src/frontend/styles/main.scss public/styles/index.css",
     "deploy-heroku": "./bin/deploy-heroku.sh"
   },
   "author": "Pablo García Egido <pgarciaegido@gmail.com>",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "imagemin-cli": "^4.0.0",
     "jimp": "^0.6.0",
+    "mocha": "^6.0.2",
     "node-sass": "^4.11.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"

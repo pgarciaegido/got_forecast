@@ -1,5 +1,5 @@
-const allCharacters = require('../db/characters.json');
-const formValuesHelper = require('../helpers/formValuesHelper');
+const allCharacters = require('../../../db/characters.json');
+const formValuesHelper = require('../../helpers/formValuesHelper');
 
 const questRH = (req, res) => {
 
