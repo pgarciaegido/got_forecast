@@ -4,188 +4,215 @@
     "id": "1",
     "idName": "jonSnow",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Jon_Snow"
+    "wikiName": "Jon_Snow",
+    "status": "1"
   },
   { 
     "name":"Sansa Stark",
     "id": "2",
     "idName": "sansaStark",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Sansa_Stark"
+    "wikiName": "Sansa_Stark",
+    "status": "1"
   },
   {
     "name": "Arya Stark",
     "id": "3",
     "idName": "aryaStark",
     "imgCredits": "Suzi Pratt",
-    "wikiName": "Arya_Stark"
+    "wikiName": "Arya_Stark",
+    "status": "1"
   },
   {
     "name": "Bran Stark",
     "id": "4",
     "idName": "branStark",
     "imgCredits": "Tamara Craiu",
-    "wikiName": "Bran_Stark"
+    "wikiName": "Bran_Stark",
+    "status": "1"
   },
   { 
     "name":"Cersei Lannister",
     "id": "5",
     "idName": "cerseiLannister",
     "imgCredits": "Denny Harrison",
-    "wikiName": "Cersei_Lannister"
+    "wikiName": "Cersei_Lannister",
+    "status": "1"
   },
   {
     "name": "Jaime Lannister",
     "id": "6",
     "idName": "jaimeLannister",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Jaime_Lannister"
+    "wikiName": "Jaime_Lannister",
+    "status": "1"
   },
   {
     "name": "Tyrion Lannister",
     "id": "7",
     "idName": "tyrionLannister",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Tyrion_Lannister"
+    "wikiName": "Tyrion_Lannister",
+    "status": "1"
   },
   { 
     "name":"Daenerys Targaryen",
     "id": "8",
     "idName": "daenerysTargaryen",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Daenerys_Targaryen"
+    "wikiName": "Daenerys_Targaryen",
+    "status": "1"
   },
   {
     "name": "Yara Greyjoy",
     "id": "9",
     "idName": "yaraGreyjoy",
     "imgCredits": "PPL Projects",
-    "wikiName": "Yara_Greyjoy"
+    "wikiName": "Yara_Greyjoy",
+    "status": "1"
   },
   {
     "name": "Theon Greyjoy",
     "id": "10",
     "idName": "theonGreyjoy",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Theon_Greyjoy"
+    "wikiName": "Theon_Greyjoy",
+    "status": "1"
   },
   { 
     "name":"Euron Greyjoy",
     "id": "11",
     "idName": "euronGreyjoy",
     "imgCredits": "Ra Boe",
-    "wikiName": "Euron_Greyjoy"
+    "wikiName": "Euron_Greyjoy",
+    "status": "1"
   },
   {
     "name": "Melisandre",
     "id": "12",
     "idName": "melisandre",
     "imgCredits": "Thor NL | Thierry Caro",
-    "wikiName": "Melisandre"
+    "wikiName": "Melisandre",
+    "status": "1"
   },
   {
     "name": "Jorah Mormont",
     "id": "13",
     "idName": "jorahMormont",
     "imgCredits": "Kosika",
-    "wikiName": "Jorah_Mormont"
+    "wikiName": "Jorah_Mormont",
+    "status": "1"
   },
   { 
     "name":"The Hound",
     "id": "14",
     "idName": "theHound",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Sandor_Clegane"
+    "wikiName": "Sandor_Clegane",
+    "status": "1"
   },
   {
     "name": "The Mountain",
     "id": "15",
     "idName": "theMountain",
     "imgCredits": "Paula  R. Lively",
-    "wikiName": "Gregor_Clegane"
+    "wikiName": "Gregor_Clegane",
+    "status": "1"
   },
   {
     "name": "Samwell Tarly",
     "id": "16",
     "idName": "samwellTarly",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Samwell_Tarly"
+    "wikiName": "Samwell_Tarly",
+    "status": "1"
   },
   { 
     "name":"Gilly",
     "id": "17",
     "idName": "gilly",
     "imgCredits": "Vera de Kok",
-    "wikiName": "Gilly"
+    "wikiName": "Gilly",
+    "status": "1"
   },
   {
     "name": "Sam (Small Child)",
     "id": "18",
     "idName": "samChild",
     "imgCredits": "",
-    "wikiName": "Sam"
+    "wikiName": "Sam",
+    "status": "1"
   },
   {
     "name": "Lord Varys",
     "id": "19",
     "idName": "lordVarys",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Varys"
+    "wikiName": "Varys",
+    "status": "1"
   },
   {
     "name": "Brienne of Tarth",
     "id": "20",
     "idName": "brienneOfTarth",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Brienne_of_Tarth"
+    "wikiName": "Brienne_of_Tarth",
+    "status": "1"
   },
   { 
     "name":"Davos Seaworth",
     "id": "21",
     "idName": "davosSeaworth",
     "imgCredits": "Floris Looijesteijn",
-    "wikiName": "Davos_Seaworth"
+    "wikiName": "Davos_Seaworth",
+    "status": "1"
   },
   {
     "name": "Bronn",
     "id": "22",
     "idName": "bronn",
     "imgCredits": "dalekhelen",
-    "wikiName": "Bronn"
+    "wikiName": "Bronn",
+    "status": "1"
   },
   {
     "name": "Podrick Payne",
     "id": "23",
     "idName": "podrickPayne",
     "imgCredits": "Rogi Lensing",
-    "wikiName": "Podrick_Payne"
+    "wikiName": "Podrick_Payne",
+    "status": "1"
   },
   { 
     "name":"Tormund Giantsbane",
     "id": "24",
     "idName": "tormundGiantsbane",
     "imgCredits": "Patrik Nygren",
-    "wikiName": "Tormund"
+    "wikiName": "Tormund",
+    "status": "1"
   },
   {
     "name": "Grey Worm",
     "id": "25",
     "idName": "greyWorm",
     "imgCredits": "Gage Skidmore",
-    "wikiName": "Grey_Worm"
+    "wikiName": "Grey_Worm",
+    "status": "1"
   },
   {
     "name": "Gendry",
     "id": "26",
     "idName": "gendry",
     "imgCredits": "Imanolvillegas",
-    "wikiName": "Gendry"
+    "wikiName": "Gendry",
+    "status": "1"
   },
   {
     "name": "Beric Dondarrion",
     "id": "27",
     "idName": "bericDondarrion",
     "imgCredits": "Joseph Sinclair",
-    "wikiName": "Beric_Dondarrion"
+    "wikiName": "Beric_Dondarrion",
+    "status": "1"
   }
 ]

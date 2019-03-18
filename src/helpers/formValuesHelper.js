@@ -32,4 +32,14 @@ const formatResults = ({allCharacters, results}) => {
   }, {[values.vitalStatus.alive]: [], [values.vitalStatus.dead]: []});
 };
 
-module.exports = { formats, values, formatResults };
+const getCurrentScore = ({allCharacters, results}) => {
+  const correctResults = allCharacters.reduce((acc, char) => {
+    const result = results[`${formats.state.vitalStatus.prefix}${formats.separator}${char[formats.state.vitalStatus.field]}`];
+    if (char.status === result) acc++;
+    return acc;
+  }, 0);
+
+  return Math.round((correctResults * 100) / allCharacters.length);
+};
+
+module.exports = { formats, values, formatResults, getCurrentScore };

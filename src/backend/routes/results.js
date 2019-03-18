@@ -13,12 +13,14 @@ const resultsRH = (req, res) => {
   }
 
   const userName = req.query.name;
+  const currentScore = formValuesHelper.getCurrentScore({ allCharacters, results: req.query });
 
   res.render('forecastResults.pug', {
     userName,
     dead: results[formValuesHelper.values.vitalStatus.dead],
     alive: results[formValuesHelper.values.vitalStatus.alive],
-    selfResults: false 
+    selfResults: false,
+    currentScore
   });
 };
 

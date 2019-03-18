@@ -3,7 +3,7 @@ const assert = require('assert');
 const dbCharacters = require('../../../db/characters.json');
 const mocks = require('./mocks');
 
-const { formatResults, values } = require('../../helpers/formValuesHelper');
+const { formatResults, getCurrentScore, values } = require('../../helpers/formValuesHelper');
 
 describe('formValuesHelper', () => {
   it('Result mocks and Database characters file should exist', () => {
@@ -47,4 +47,25 @@ describe('formValuesHelper', () => {
       assert.deepStrictEqual(formattedResult, mocks.formattedResult);
     });
   });
+  describe('getCurrentScore function', () => {
+    let currentScore;
+    try {
+      currentScore = getCurrentScore({
+        allCharacters: dbCharacters,
+        results: mocks.rawResult
+      });
+    } 
+    catch(err) {
+      console.log(err);
+    }
+    it('getCurrentScore function must return a number', () => {
+      assert.ok(Number.isSafeInteger(currentScore));
+    });
+    it('getCurrentScore function must return a number between 0 and 100', () => {
+      assert.ok(0 <= currentScore && currentScore <= 100);
+    });
+    it('with given mock, it must return 37', () => {
+      assert.equal(currentScore, 37);
+    });
+  })
 });

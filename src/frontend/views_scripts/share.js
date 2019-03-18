@@ -22,7 +22,6 @@ const copyLink = (self) => {
 };
 
 const goToMyResults = () => {
-  console.log('llega!!!');
   const results = getLocalStorageItem();
   window.location = `http://localhost:3000/results?${queryString.stringify(results)}`;
 };
