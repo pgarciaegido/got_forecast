@@ -14,13 +14,8 @@ git checkout master
 rm -rf public
 git merge develop --no-edit
 npm run build
-cd public
-touch $random
-cd ..
+touch public/$random
 git add .
 git commit -m "Build public folder. Latest commit: $commitMessage ($commitSHA)"
 git push heroku master
-cd public
-rm $random
-cd ..
 git checkout develop

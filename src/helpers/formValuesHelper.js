@@ -22,6 +22,7 @@ const values = {
 
 // METHOD TO FORMAT UPPER VALUES WHEN PASSED EITHER BY PAYLOAD OR BY QUERY PARAMS
 const formatResults = ({allCharacters, results}) => {
+  
   return allCharacters.reduce((acc, char) => {
 
     acc[results[`${formats.state.vitalStatus.prefix}${formats.separator}${char[formats.state.vitalStatus.field]}`]]

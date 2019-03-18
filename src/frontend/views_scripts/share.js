@@ -21,4 +21,17 @@ const copyLink = (self) => {
   document.execCommand("copy");
 };
 
-module.exports = { openModal, closeModal, fillName, copyLink };
+const goToMyResults = () => {
+  console.log('llega!!!');
+  const results = getLocalStorageItem();
+  window.location = `http://localhost:3000/results?${queryString.stringify(results)}`;
+};
+
+if (window.location.pathname === '/') {
+  if (getLocalStorageItem()) {
+    document.getElementById('my-results').style.cssText = 'display: block';
+    document.getElementById('new-quest').style.cssText = 'display: none';
+  }
+}
+
+module.exports = { openModal, closeModal, fillName, copyLink, goToMyResults };
