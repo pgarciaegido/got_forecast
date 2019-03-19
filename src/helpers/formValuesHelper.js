@@ -39,7 +39,10 @@ const getCurrentScore = ({allCharacters, results}) => {
     return acc;
   }, 0);
 
-  return Math.round((correctResults * 100) / allCharacters.length);
+  return {
+    cssWidth: Math.round((correctResults * 100) / allCharacters.length),
+    score: correctResults
+  }
 };
 
 module.exports = { formats, values, formatResults, getCurrentScore };

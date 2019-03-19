@@ -17,7 +17,7 @@ block content
 
     // SELF RESULTS
     .pure-g.header
-      if selfResults
+      if selfResults || !userName
         .pure-u-1.pure-u-sm-1-2
           h1 Your forecast!
         .pure-u-1.pure-u-sm-1-2.claim
@@ -34,12 +34,18 @@ block content
             a#button(href="/") Do your own!
     
     .score
-      h3 Current score!
-      .score-bar
-        .score-bar-correct(style=`width: ${currentScore}%`)
+      .container.pure-g
+        .bar-container.pure-u-4-5
+          h3 Current score!
+          .score-bar
+            .score-bar-correct.empty(style=`width: ${currentScore.cssWidth}%`, score=`${currentScore.score}`)
+        .score-number-container.pure-u-1-5
+          p#score-number 0
+          span points
+      
 
     .results-table
-      .pure-g.header
+      .pure-g.header-table
         .pure-u-sm-1.pure-u-md-1-2
           .results-column.alive-column
             h2 Alive

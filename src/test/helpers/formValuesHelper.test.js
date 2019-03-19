@@ -50,22 +50,34 @@ describe('formValuesHelper', () => {
   describe('getCurrentScore function', () => {
     let currentScore;
     try {
+      
       currentScore = getCurrentScore({
         allCharacters: dbCharacters,
         results: mocks.rawResult
       });
+      console.log(currentScore);
     } 
     catch(err) {
       console.log(err);
     }
-    it('getCurrentScore function must return a number', () => {
-      assert.ok(Number.isSafeInteger(currentScore));
+    it('getCurrentScore function must return an object number', () => {
+      assert.ok(typeof currentScore === 'object' && currentScore !== null)
     });
-    it('getCurrentScore function must return a number between 0 and 100', () => {
-      assert.ok(0 <= currentScore && currentScore <= 100);
+
+    it('getCurrentScore function cssWidth must be an number between 0 and 100', () => {
+      assert.ok(Number.isSafeInteger(currentScore.cssWidth));
+      assert.ok(0 <= currentScore.cssWidth && currentScore.cssWidth <= 100);
     });
-    it('with given mock, it must return 37', () => {
-      assert.equal(currentScore, 37);
+
+    it('getCurrentScore function cssWidth must be an number between 0 and 100', () => {
+      assert.ok(Number.isSafeInteger(currentScore.score));
+      assert.ok(0 <= currentScore.score && currentScore.score <= dbCharacters.length);
+    });
+    it('with given mock, cssWidth must return 37', () => {
+      assert.equal(currentScore.cssWidth, 37);
+    });
+    it('with given mock, score must return 10', () => {
+      assert.equal(currentScore.score, 10);
     });
   })
 });
