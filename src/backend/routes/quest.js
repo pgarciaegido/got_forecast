@@ -22,11 +22,13 @@ const submitRH = (req, res) => {
   const { alive, dead } = formValuesHelper.values.vitalStatus;
 
   const formResults = formValuesHelper.formatResults({ allCharacters, results: req.body });
+  const currentScore = formValuesHelper.getCurrentScore({ allCharacters, results: req.body });
 
   res.render('forecastResults.pug', {
     dead:formResults[dead],
     alive: formResults[alive],
-    selfResults: true
+    selfResults: true,
+    currentScore
   });
 };
 

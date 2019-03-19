@@ -15,7 +15,7 @@ const init = () => {
 
   // RESULTS ----------------------------------
 
-  if (window.location.pathname === '/results') {
+  if (window.location.pathname === '/results' || window.location.pathname === '/submit') {
     addSlideDownClass("results-table");
 
     setTimeout(() => {
@@ -33,6 +33,8 @@ const init = () => {
           let scoreNumberElement = document.getElementById('score-number');
           let startNumber = 0;
           let counter = 50;
+
+          console.log(score);
 
           // Increase repeateadly the score number till it reaches the result
           // This function increases time on every iteration
