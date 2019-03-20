@@ -23,7 +23,7 @@ const copyLink = (self) => {
 
 const goToMyResults = () => {
   const results = getLocalStorageItem();
-  window.location = `http://localhost:3000/results?${queryString.stringify(results)}`;
+  window.location = `${document.location.origin}/results?${queryString.stringify(results)}`;
 };
 
 module.exports = { openModal, closeModal, fillName, copyLink, goToMyResults };

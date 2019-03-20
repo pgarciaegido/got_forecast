@@ -34,8 +34,6 @@ const init = () => {
           let startNumber = 0;
           let counter = 50;
 
-          console.log(score);
-
           // Increase repeateadly the score number till it reaches the result
           // This function increases time on every iteration
           var myFunction = function () {

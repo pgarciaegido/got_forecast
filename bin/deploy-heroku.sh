@@ -19,3 +19,4 @@ git add .
 git commit -m "Build public folder. Latest commit: $commitMessage ($commitSHA)"
 git push heroku master
 git checkout develop
+npm run build
