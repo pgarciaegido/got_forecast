@@ -39,7 +39,7 @@ const init = () => {
           var myFunction = function () {
             scoreNumberElement.innerText = startNumber++;
             if (startNumber <= score) {
-              counter += (counter * 0.1);
+              counter += (counter * 0.08);
               setTimeout(myFunction, counter);
             }
           }
