@@ -38,6 +38,19 @@ describe('formValuesHelper', () => {
       assert.equal(Object.keys(formattedResult).length, 2);
     });
   
+    it('Every character object must be an object with 3 fields: id, nameToDisplay, status', () => {
+      const { alive, dead } = values.vitalStatus;
+      
+      [alive, dead].forEach((s) => {
+        formattedResult[s].forEach((characterObject) => {
+          assert.equal(Object.keys(characterObject).length, 3);
+          assert.ok(characterObject.id);
+          assert.ok(characterObject.nameToDisplay);
+          assert.ok(characterObject.status);
+        });
+      })
+    });
+
     it('formatResults function must return an object with two fields and those fields should match with registered values', () => {
       assert.ok(formattedResult[values.vitalStatus.alive]);
       assert.ok(formattedResult[values.vitalStatus.dead]);

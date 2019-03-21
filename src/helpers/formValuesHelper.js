@@ -26,7 +26,7 @@ const formatResults = ({allCharacters, results}) => {
   return allCharacters.reduce((acc, char) => {
 
     acc[results[`${formats.state.vitalStatus.prefix}${formats.separator}${char[formats.state.vitalStatus.field]}`]]
-      .push({id: char.idName, nameToDisplay: char.name });
+      .push({id: char.idName, nameToDisplay: char.name, status: char.status === values.vitalStatus.alive ? 'alive' : 'dead' });
     return acc;
 
   }, {[values.vitalStatus.alive]: [], [values.vitalStatus.dead]: []});
