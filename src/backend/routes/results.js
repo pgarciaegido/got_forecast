@@ -12,7 +12,8 @@ const resultsRH = (req, res) => {
     return res.redirect('/');
   }
 
-  const userName = req.query.name;
+  
+  const userName = req.query.name ? req.query.name.split('-').join(' ') : '';
   const currentScore = formValuesHelper.getCurrentScore({ allCharacters, results: req.query });
 
   res.render('forecastResults.pug', {

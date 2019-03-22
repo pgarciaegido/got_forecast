@@ -7,7 +7,7 @@ block content
     .modal-content(onclick="event.stopPropagation()")
       h3 Share your results!
       label Your name
-        input(oninput="gotForecast.share.fillName(this.value)" name="username" type="text")#username
+        input(oninput="gotForecast.share.fillName(this.value)" name="username" type="text" maxlength="20")#username
       #link-container
         label Your link
           input#sharelink(type="text")

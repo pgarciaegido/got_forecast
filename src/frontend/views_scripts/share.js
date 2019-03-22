@@ -10,7 +10,7 @@ const closeModal = () => location.hash = "";
 const fillName = (username) => {
   const results = getLocalStorageItem();
   const linkInput = document.getElementById('sharelink');
-  linkInput.value = `${document.location.origin}/results?${queryString.stringify(results)}&name=${username}`;
+  linkInput.value = `${document.location.origin}/results?${queryString.stringify(results)}&name=${username.split(' ').join('-')}`;
   document.getElementById('link-container').style.display = "flex";
 }
 
