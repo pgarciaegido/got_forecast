@@ -3,9 +3,13 @@ const { getLocalStorageItem } = require('./formHandler');
 
 const openModal = (hash) => {
   location.hash = `#${hash}`;
+  document.body.style.overflow = "hidden";
 }
 
-const closeModal = () => location.hash = "";
+const closeModal = () =>  {
+  location.hash = "";
+  document.body.style.overflow = "auto";
+};
 
 const fillName = (username) => {
   const results = getLocalStorageItem();
@@ -27,7 +31,6 @@ const goToMyResults = () => {
 };
 
 const avoidCharacters = () => {
-  // window.event.preventDefault();
   const { event } = window;
   if (event.key === "&" || event.key === "?") event.returnValue = false;
 };

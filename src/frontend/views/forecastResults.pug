@@ -15,7 +15,7 @@ block content
           onkeypress="gotForecast.share.avoidCharacters()")
       #link-container
         label Your link
-          input#sharelink(type="text")
+          input#sharelink(type="text", disabled, readonly)
         span.animate(onclick="gotForecast.share.copyLink(this)") copy
       
   #forecast-results
