@@ -28,13 +28,8 @@ const goToMyResults = () => {
 
 const avoidCharacters = () => {
   // window.event.preventDefault();
-  console.log('llega?');
-  if (window.event.key === "&" || window.event.key === "?") window.event.preventDefault();
-}
-
-// Avoids entering ? and & that can messup with query params
-document.querySelector("input[name='username']").addEventListener('keypress', function(ev) {
-  if(ev.key === '&' || ev.key === '?') ev.returnValue = false;
-});
+  const { event } = window;
+  if (event.key === "&" || event.key === "?") event.returnValue = false;
+};
 
 module.exports = { openModal, closeModal, fillName, copyLink, goToMyResults, avoidCharacters };
