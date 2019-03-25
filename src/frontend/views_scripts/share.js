@@ -26,4 +26,15 @@ const goToMyResults = () => {
   window.location = `${document.location.origin}/results?${queryString.stringify(results)}`;
 };
 
-module.exports = { openModal, closeModal, fillName, copyLink, goToMyResults };
+const avoidCharacters = () => {
+  // window.event.preventDefault();
+  console.log('llega?');
+  if (window.event.key === "&" || window.event.key === "?") window.event.preventDefault();
+}
+
+// Avoids entering ? and & that can messup with query params
+document.querySelector("input[name='username']").addEventListener('keypress', function(ev) {
+  if(ev.key === '&' || ev.key === '?') ev.returnValue = false;
+});
+
+module.exports = { openModal, closeModal, fillName, copyLink, goToMyResults, avoidCharacters };
