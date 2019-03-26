@@ -56,14 +56,8 @@ const enableButton = (form, numberOfCharactersOnPage) => {
   const button = document.getElementById('button');
   if (button.hasAttribute('disabled')) {
     const formattedForm = formSerialize(form, { hash: true });
-    const regex = new RegExp(formValuesHelper.formats.state.vitalStatus.prefix);
 
-    const numberOfStatusChecked = Object.keys(formattedForm).reduce((acc, key) => {
-      if (regex.test(key)) acc++;
-      return acc;
-    }, 0);
-
-    if (numberOfStatusChecked === numberOfCharactersOnPage) {
+    if (Object.keys(formattedForm).length === numberOfCharactersOnPage) {
       button.removeAttribute('disabled');
     }
   }

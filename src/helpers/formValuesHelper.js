@@ -25,7 +25,7 @@ const formatResults = ({allCharacters, results}) => {
   
   return allCharacters.reduce((acc, char) => {
 
-    acc[results[`${formats.state.vitalStatus.prefix}${formats.separator}${char[formats.state.vitalStatus.field]}`]]
+    acc[results[char[formats.state.vitalStatus.field]]]
       .push({id: char.idName, nameToDisplay: char.name, status: char.status === values.vitalStatus.alive ? 'alive' : 'dead' });
     return acc;
 
@@ -34,7 +34,7 @@ const formatResults = ({allCharacters, results}) => {
 
 const getCurrentScore = ({allCharacters, results}) => {
   const correctResults = allCharacters.reduce((acc, char) => {
-    const result = results[`${formats.state.vitalStatus.prefix}${formats.separator}${char[formats.state.vitalStatus.field]}`];
+    const result = results[`${char[formats.state.vitalStatus.field]}`];
     if (char.status === result) acc++;
     return acc;
   }, 0);

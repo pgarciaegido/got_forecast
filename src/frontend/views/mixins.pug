@@ -11,7 +11,7 @@ mixin characterItem(character, length)
       label.alive-label
         input.alive-input(
           type="radio",
-          name=`${formValuesHelper.formats.state.vitalStatus.prefix}${formValuesHelper.formats.separator}${character[formValuesHelper.formats.state.vitalStatus.field]}`,
+          name=`${character[formValuesHelper.formats.state.vitalStatus.field]}`,
           value=`${formValuesHelper.values.vitalStatus.alive}`,
           onchange=`gotForecast.formHandler.enableButton(forecast, ${length})`
         )
@@ -21,7 +21,7 @@ mixin characterItem(character, length)
       label.dead-label
         input.dead-input(
           type="radio",
-          name=`${formValuesHelper.formats.state.vitalStatus.prefix}${formValuesHelper.formats.separator}${character[formValuesHelper.formats.state.vitalStatus.field]}`,
+          name=`${character[formValuesHelper.formats.state.vitalStatus.field]}`,
           value=`${formValuesHelper.values.vitalStatus.dead}`,
           onchange=`gotForecast.formHandler.enableButton(forecast, ${length})`
         )

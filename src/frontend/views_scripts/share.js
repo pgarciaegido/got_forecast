@@ -14,7 +14,7 @@ const closeModal = () =>  {
 const fillName = (username) => {
   const results = getLocalStorageItem();
   const linkInput = document.getElementById('sharelink');
-  linkInput.value = `${document.location.origin}/results?${queryString.stringify(results)}&name=${username.split(' ').join('-')}`;
+  linkInput.value = `${document.location.origin}/r?${queryString.stringify(results)}&n=${username.split(' ').join('-')}`;
   document.getElementById('link-container').style.display = "flex";
 }
 
@@ -27,7 +27,7 @@ const copyLink = (self) => {
 
 const goToMyResults = () => {
   const results = getLocalStorageItem();
-  window.location = `${document.location.origin}/results?${queryString.stringify(results)}`;
+  window.location = `${document.location.origin}/r?${queryString.stringify(results)}`;
 };
 
 const avoidCharacters = () => {

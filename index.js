@@ -19,7 +19,7 @@ app.get('/', (req, res) => res.render('landing.pug'));
 
 app.get('/quest', questRH);
 app.post('/submit', submitRH);
-app.get('/results', resultsRH);
+app.get('/r', resultsRH);
 app.get('/advertise', (req, res) => {
   res.send('You can contact with pgarciaegido@gmail.com for further information');
 })

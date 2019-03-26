@@ -15,7 +15,7 @@ const init = () => {
 
   // RESULTS ----------------------------------
 
-  if (window.location.pathname === '/results' || window.location.pathname === '/submit') {
+  if (window.location.pathname === '/r' || window.location.pathname === '/submit') {
     addSlideDownClass("results-table");
 
     setTimeout(() => {

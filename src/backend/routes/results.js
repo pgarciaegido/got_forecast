@@ -13,7 +13,7 @@ const resultsRH = (req, res) => {
   }
 
   
-  const userName = req.query.name ? req.query.name.split('-').join(' ') : '';
+  const userName = req.query.n ? req.query.n.split('-').join(' ') : '';
   const currentScore = formValuesHelper.getCurrentScore({ allCharacters, results: req.query });
 
   res.render('forecastResults.pug', {
