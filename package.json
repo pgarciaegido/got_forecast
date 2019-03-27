@@ -26,6 +26,7 @@
     "sass": "^1.17.0"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "imagemin-cli": "^4.0.0",
     "jimp": "^0.6.0",
     "mocha": "^6.0.2",

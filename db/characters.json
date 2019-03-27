@@ -5,7 +5,8 @@
     "idName": "jonSnow",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Jon_Snow",
-    "status": "1"
+    "status": "1",
+    "apiId": "583"
   },
   { 
     "name":"Sansa Stark",
@@ -13,7 +14,8 @@
     "idName": "sansaStark",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Sansa_Stark",
-    "status": "1"
+    "status": "1",
+    "apiId": "957"
   },
   {
     "name": "Arya Stark",
@@ -21,7 +23,8 @@
     "idName": "aryaStark",
     "imgCredits": "Suzi Pratt",
     "wikiName": "Arya_Stark",
-    "status": "1"
+    "status": "1",
+    "apiId": "148"
   },
   {
     "name": "Bran Stark",
@@ -29,7 +32,8 @@
     "idName": "branStark",
     "imgCredits": "Tamara Craiu",
     "wikiName": "Bran_Stark",
-    "status": "1"
+    "status": "1",
+    "apiId": "206"
   },
   { 
     "name":"Cersei Lannister",
@@ -37,7 +41,8 @@
     "idName": "cerseiLannister",
     "imgCredits": "Denny Harrison",
     "wikiName": "Cersei_Lannister",
-    "status": "1"
+    "status": "1",
+    "apiId": "238"
   },
   {
     "name": "Jaime Lannister",
@@ -45,7 +50,8 @@
     "idName": "jaimeLannister",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Jaime_Lannister",
-    "status": "1"
+    "status": "1",
+    "apiId": "529"
   },
   {
     "name": "Tyrion Lannister",
@@ -53,7 +59,8 @@
     "idName": "tyrionLannister",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Tyrion_Lannister",
-    "status": "1"
+    "status": "1",
+    "apiId": "1052"
   },
   { 
     "name":"Daenerys Targaryen",
@@ -61,7 +68,8 @@
     "idName": "daenerysTargaryen",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Daenerys_Targaryen",
-    "status": "1"
+    "status": "1",
+    "apiId": "271"
   },
   {
     "name": "Yara Greyjoy",
@@ -69,7 +77,8 @@
     "idName": "yaraGreyjoy",
     "imgCredits": "PPL Projects",
     "wikiName": "Yara_Greyjoy",
-    "status": "1"
+    "status": "1",
+    "apiId": ""
   },
   {
     "name": "Theon Greyjoy",
@@ -77,7 +86,8 @@
     "idName": "theonGreyjoy",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Theon_Greyjoy",
-    "status": "1"
+    "status": "1",
+    "apiId": "1022"
   },
   { 
     "name":"Euron Greyjoy",
@@ -85,7 +95,8 @@
     "idName": "euronGreyjoy",
     "imgCredits": "Ra Boe",
     "wikiName": "Euron_Greyjoy",
-    "status": "1"
+    "status": "1",
+    "apiId": "385"
   },
   {
     "name": "Melisandre",
@@ -93,7 +104,8 @@
     "idName": "melisandre",
     "imgCredits": "Thor NL | Thierry Caro",
     "wikiName": "Melisandre",
-    "status": "1"
+    "status": "1",
+    "apiId": "743"
   },
   {
     "name": "Jorah Mormont",
@@ -101,7 +113,8 @@
     "idName": "jorahMormont",
     "imgCredits": "Kosika",
     "wikiName": "Jorah_Mormont",
-    "status": "1"
+    "status": "1",
+    "apiId": "1560"
   },
   { 
     "name":"The Hound",
@@ -109,7 +122,8 @@
     "idName": "theHound",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Sandor_Clegane",
-    "status": "1"
+    "status": "1",
+    "apiId": "955"
   },
   {
     "name": "The Mountain",
@@ -117,7 +131,8 @@
     "idName": "theMountain",
     "imgCredits": "Paula  R. Lively",
     "wikiName": "Gregor_Clegane",
-    "status": "1"
+    "status": "1",
+    "apiId": "1442"
   },
   {
     "name": "Samwell Tarly",
@@ -125,7 +140,8 @@
     "idName": "samwellTarly",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Samwell_Tarly",
-    "status": "1"
+    "status": "1",
+    "apiId": "954"
   },
   { 
     "name":"Gilly",
@@ -133,7 +149,8 @@
     "idName": "gilly",
     "imgCredits": "Vera de Kok",
     "wikiName": "Gilly",
-    "status": "1"
+    "status": "1",
+    "apiId": "1427"
   },
   {
     "name": "Sam (Small Child)",
@@ -141,7 +158,8 @@
     "idName": "samChild",
     "imgCredits": "",
     "wikiName": "Sam",
-    "status": "1"
+    "status": "1",
+    "apiId": ""
   },
   {
     "name": "Lord Varys",
@@ -149,7 +167,8 @@
     "idName": "lordVarys",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Varys",
-    "status": "1"
+    "status": "1",
+    "apiId": "2069"
   },
   {
     "name": "Brienne of Tarth",
@@ -157,7 +176,8 @@
     "idName": "brienneOfTarth",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Brienne_of_Tarth",
-    "status": "1"
+    "status": "1",
+    "apiId": "216"
   },
   { 
     "name":"Davos Seaworth",
@@ -165,7 +185,8 @@
     "idName": "davosSeaworth",
     "imgCredits": "Floris Looijesteijn",
     "wikiName": "Davos_Seaworth",
-    "status": "1"
+    "status": "1",
+    "apiId": "1319"
   },
   {
     "name": "Bronn",
@@ -173,7 +194,8 @@
     "idName": "bronn",
     "imgCredits": "dalekhelen",
     "wikiName": "Bronn",
-    "status": "1"
+    "status": "1",
+    "apiId": "217"
   },
   {
     "name": "Podrick Payne",
@@ -181,7 +203,8 @@
     "idName": "podrickPayne",
     "imgCredits": "Rogi Lensing",
     "wikiName": "Podrick_Payne",
-    "status": "1"
+    "status": "1",
+    "apiId": "827"
   },
   { 
     "name":"Tormund Giantsbane",
@@ -189,7 +212,8 @@
     "idName": "tormundGiantsbane",
     "imgCredits": "Patrik Nygren",
     "wikiName": "Tormund",
-    "status": "1"
+    "status": "1",
+    "apiId": "2024"
   },
   {
     "name": "Grey Worm",
@@ -197,7 +221,8 @@
     "idName": "greyWorm",
     "imgCredits": "Gage Skidmore",
     "wikiName": "Grey_Worm",
-    "status": "1"
+    "status": "1",
+    "apiId": "1445"
   },
   {
     "name": "Gendry",
@@ -205,7 +230,8 @@
     "idName": "gendry",
     "imgCredits": "Imanolvillegas",
     "wikiName": "Gendry",
-    "status": "1"
+    "status": "1",
+    "apiId": "1418"
   },
   {
     "name": "Beric Dondarrion",
@@ -213,6 +239,7 @@
     "idName": "bericDondarrion",
     "imgCredits": "Joseph Sinclair",
     "wikiName": "Beric_Dondarrion",
-    "status": "1"
+    "status": "1",
+    "apiId": "190"
   }
 ]

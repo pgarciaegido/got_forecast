@@ -20,9 +20,7 @@ app.get('/', (req, res) => res.render('landing.pug'));
 app.get('/quest', questRH);
 app.post('/submit', submitRH);
 app.get('/r', resultsRH);
-app.get('/advertise', (req, res) => {
-  res.send('You can contact with pgarciaegido@gmail.com for further information');
-})
+app.get('/advertise', (req, res) => res.render('advertise.pug'));
 
 app.use((req, res) => res.status(404).redirect('/'));
 
