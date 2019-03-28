@@ -9,6 +9,7 @@ commitSHA=$(git rev-parse --short HEAD)
 commitMessage=$(git log -1 --pretty=%B)
 random=$RANDOM
 
+bin/update-db.sh
 rm -rf public
 git checkout master
 rm -rf public

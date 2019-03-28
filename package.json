@@ -21,12 +21,11 @@
     "express": "^4.16.4",
     "form-serialize": "^0.7.2",
     "pug": "^2.0.3",
-    "puppeteer": "^1.12.2",
+    "puppeteer": "^1.13.0",
     "query-string": "^6.2.0",
     "sass": "^1.17.0"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
     "imagemin-cli": "^4.0.0",
     "jimp": "^0.6.0",
     "mocha": "^6.0.2",
