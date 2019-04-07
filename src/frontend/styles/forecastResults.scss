@@ -99,11 +99,15 @@
 }
 
 #forecast-results {
+  letter-spacing: normal;
 
   .header {
     @include yAxisStart();
     padding: 25px 0;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
     h1 {
       margin: 0;
     }
@@ -115,6 +119,7 @@
         width: 50%;
         text-align: center;
         float: right;
+        width: 100%;
       }
     }
   }
@@ -125,14 +130,17 @@
     color: $jonquil;
     padding: 15px;
     border-radius: $borderRadius;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    .bar-container {
+      width: 100%;
+    }
 
     h3 {
       margin: 0;
       margin-bottom: 20px;
-    }
-
-    .container {
-      align-items: center;
     }
 
     &-bar {
@@ -155,6 +163,7 @@
 
     &-number-container {
       text-align: center;
+      padding: 0 30px 0 50px;
 
       p {
         margin: 0;
@@ -169,6 +178,9 @@
 
     .header-table {
       margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
     }
 
     div {
@@ -185,22 +197,35 @@
         background-color: white;
         border-radius: $borderRadius;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         font-size: 1em;
         font-weight: 500;
         color: $darkSlateGray;
         margin: 10px;
-  
-        img {
-          width: 100%;
-          border-radius: 50%;
+
+        .image {
+          width: 100px;
+
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
         }
 
-        .status {
-          text-align: right;
-          span {
-            letter-spacing: initial;
-            font-size: 0.7em;
+        .info {
+          margin: 0 auto;
+
+          .name {
+            font-weight: 700;
+          }
+
+          .status {
+            text-align: right;
+            span {
+              letter-spacing: initial;
+              font-size: 0.7em;
+            }
           }
         }
       }
@@ -211,12 +236,6 @@
         border-left: 5px solid $sunsetOrange;
       }
 
-    }
-    .results-column.alive-column {
-      margin-right: 10px;
-    }
-    .results-column.dead-column {
-      margin-left: 10px;
     }
   }
 }

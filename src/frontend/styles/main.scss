@@ -1,15 +1,16 @@
-@import './purecss';
-
 @import './variables';
 
 @import './landing';
 @import './quest';
 @import './forecastResults';
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
 
 body {
   background-color: $grayBackground;
   padding: 0 30px;
+  font-family: 'Roboto Slab', serif;
 }
 #main-container {
   max-width: 1000px;

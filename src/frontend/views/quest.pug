@@ -6,10 +6,10 @@ block content
   #quest
     // new form will get sent on script "submitForm" on a new form element
     form(name="forecast")
-      .pure-g.items-container
+      .items-container
         - const length = characters.length
         each c in characters
-          .pure-u-1.pure-u-md-12-24.pure-u-lg-8-24.item-container
+          .item-container
             +characterItem(c, length, formValuesHelper)
 
       .button-container

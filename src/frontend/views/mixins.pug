@@ -28,15 +28,3 @@ mixin characterItem(character, length)
         .label-image
           img.off(src="/images/skull-gray.svg")
           img.on(src="/images/skull-red.svg")
-    
-    //.character-item-whiteWalker--container
-    //.character-item-whiteWalker
-      label White Walker?
-        input(
-          type="checkbox",
-          name=`whitewalker-${character.idName}`,
-          value="true"
-        )
-        .box
-          .checked--container
-            .checked

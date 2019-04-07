@@ -21,62 +21,58 @@ block content
   #forecast-results
 
     // SELF RESULTS
-    .pure-g.header
+    .header
       if selfResults || !userName
-        .pure-u-1.pure-u-sm-1-2
+        div
           h1 Your forecast!
-        .pure-u-1.pure-u-sm-1-2.claim
+        .claim
           .custom--button.button(onclick="gotForecast.share.openModal('share')")
             a#button Share your results!
       else
-        .pure-u-1.pure-u-sm-1-2.claim
+        .claim
           h1 This is &nbsp;
             if userName
               span= userName
                 span 's forecast!
-        .pure-u-1.pure-u-sm-1-2.claim
+        .claim
           .custom--button.button(onclick="window.location.href='/'")
             a#button(href="/") Do your own!
     
     .score
-      .container.pure-g
-        .bar-container.pure-u-4-5
-          h3 Current score!
-          .score-bar
-            .score-bar-correct.empty(style=`width: ${currentScore.cssWidth}%`, score=`${currentScore.score}`)
-        .score-number-container.pure-u-1-5
-          p#score-number 0
-          span points
-      
+      .bar-container
+        h3 Current score!
+        .score-bar
+          .score-bar-correct.empty(style=`width: ${currentScore.cssWidth}%`, score=`${currentScore.score}`)
+      .score-number-container
+        p#score-number 0
+        span points
 
     .results-table
-      .pure-g.header-table
-        .pure-u-sm-1.pure-u-md-1-2
-          .results-column.alive-column
-            h2 Alive
-            each a in alive
-              .pure-u-1.pure-u-sm-1-2.card-container
-                .alive-card.card.pure-g
-                  .pure-u-1-4
-                    img(src=`/images/${a.id}.jpg`)
-                  .pure-u-3-4
-                    p.name=a.nameToDisplay
-                    .status
-                      span Current status: 
-                      span(style=`color: ${a.status === 'alive' ? '#8CE888' : '#FF5757'}`)
-                        strong=a.status
+      .header-table
+        .results-column.alive-column
+          h2 Alive
+          each a in alive
+            .card-container
+              .alive-card.card
+                .image
+                  img(src=`/images/${a.id}.jpg`)
+                .info
+                  p.name=a.nameToDisplay
+                  .status
+                    span Current status: 
+                    span(style=`color: ${a.status === 'alive' ? '#8CE888' : '#FF5757'}`)
+                      strong=a.status
 
-        .pure-u-sm-1.pure-u-md-1-2
-          .results-column.dead-column
-            h2 Dead
-            each d in dead
-              .pure-u-1.pure-u-sm-1-2.card-container
-                .dead-card.card.pure-g
-                  .pure-u-1-4
-                    img(src=`/images/${d.id}.jpg`)
-                  .pure-u-3-4
-                    p.name=d.nameToDisplay
-                    .status
-                      span Current status: 
-                      span(style=`color: ${d.status === 'alive' ? '#8CE888' : '#FF5757'}`)
-                        strong=d.status
+        .results-column.dead-column
+          h2 Dead
+          each d in dead
+            .card-container
+              .dead-card.card
+                .image
+                  img(src=`/images/${d.id}.jpg`)
+                .info
+                  p.name=d.nameToDisplay
+                  .status
+                    span Current status: 
+                    span(style=`color: ${d.status === 'alive' ? '#8CE888' : '#FF5757'}`)
+                      strong=d.status
