@@ -86,7 +86,7 @@
         "idName": "theonGreyjoy",
         "imgCredits": "Gage Skidmore",
         "wikiName": "Theon_Greyjoy",
-        "status": "1",
+        "status": "0",
         "apiId": "1022"
     },
     {
@@ -104,7 +104,7 @@
         "idName": "melisandre",
         "imgCredits": "Thor NL | Thierry Caro",
         "wikiName": "Melisandre",
-        "status": "1",
+        "status": "0",
         "apiId": "743"
     },
     {
@@ -113,7 +113,7 @@
         "idName": "jorahMormont",
         "imgCredits": "Kosika",
         "wikiName": "Jorah_Mormont",
-        "status": "1",
+        "status": "0",
         "apiId": "1560"
     },
     {
@@ -239,7 +239,7 @@
         "idName": "bericDondarrion",
         "imgCredits": "Joseph Sinclair",
         "wikiName": "Beric_Dondarrion",
-        "status": "1",
+        "status": "0",
         "apiId": "190"
     }
 ]
